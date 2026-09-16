@@ -1,0 +1,1719 @@
+{
+  "index.html": {
+    "title": "SGIARC | Shri Sant Gajanan Maharaj College of Engineering, Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h1",
+        "text": "BioMID Lab"
+      },
+      {
+        "tag": "h2",
+        "text": "Research & Hardware Prototypes"
+      },
+      {
+        "tag": "h2",
+        "text": "Featured Research Projects"
+      },
+      {
+        "tag": "h2",
+        "text": "Latest Publications & Granted Patents"
+      },
+      {
+        "tag": "h2",
+        "text": "Research Team & Mentors"
+      },
+      {
+        "tag": "h2",
+        "text": "Advanced Laboratories & Instrumentation"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC Research Repository"
+      }
+    ],
+    "paragraphs": [
+      "Cutting-edge biosensing devices, diagnostic hardware, micro-fabricated sensors, and intelligent prototypes\n          developed at BioMID Lab & SGIARC.",
+      "High-impact sponsored research projects funded by national agencies and industry partners.",
+      "Peer-reviewed journal articles in IEEE, Scopus, Web of Science, and granted Indian patents.",
+      "Our doctorate research team leading funded labs, doctoral supervision, and student innovation teams.",
+      "State-of-the-art computational hardware, prototyping fabrication suites, and dedicated experimental testbeds.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.35 PM (1).jpeg",
+        "alt": "BioMID Prototype 1"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.35 PM.jpeg",
+        "alt": "BioMID Prototype 2"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.36 PM (1).jpeg",
+        "alt": "BioMID Prototype 3"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.36 PM.jpeg",
+        "alt": "BioMID Prototype 4"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.37 PM (1).jpeg",
+        "alt": "BioMID Prototype 5"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.37 PM (2).jpeg",
+        "alt": "BioMID Prototype 6"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.37 PM.jpeg",
+        "alt": "BioMID Prototype 7"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.38 PM (1).jpeg",
+        "alt": "BioMID Prototype 8"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.38 PM.jpeg",
+        "alt": "BioMID Prototype 9"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.39 PM (1).jpeg",
+        "alt": "BioMID Prototype 10"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.39 PM (2).jpeg",
+        "alt": "BioMID Prototype 11"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.39 PM.jpeg",
+        "alt": "BioMID Prototype 12"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.40 PM (1).jpeg",
+        "alt": "BioMID Prototype 13"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.40 PM.jpeg",
+        "alt": "BioMID Prototype 14"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.35 PM (1).jpeg",
+        "alt": "BioMID Prototype 1"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.35 PM.jpeg",
+        "alt": "BioMID Prototype 2"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.36 PM (1).jpeg",
+        "alt": "BioMID Prototype 3"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.36 PM.jpeg",
+        "alt": "BioMID Prototype 4"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.37 PM (1).jpeg",
+        "alt": "BioMID Prototype 5"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.37 PM (2).jpeg",
+        "alt": "BioMID Prototype 6"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.37 PM.jpeg",
+        "alt": "BioMID Prototype 7"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.38 PM (1).jpeg",
+        "alt": "BioMID Prototype 8"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.38 PM.jpeg",
+        "alt": "BioMID Prototype 9"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.39 PM (1).jpeg",
+        "alt": "BioMID Prototype 10"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.39 PM (2).jpeg",
+        "alt": "BioMID Prototype 11"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.39 PM.jpeg",
+        "alt": "BioMID Prototype 12"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.40 PM (1).jpeg",
+        "alt": "BioMID Prototype 13"
+      },
+      {
+        "src": "https://sgiarc.vercel.app/assets/images/prototypes/WhatsApp Image 2026-09-01 at 6.08.40 PM.jpeg",
+        "alt": "BioMID Prototype 14"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Explore Research Projects \u2192",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Research Thrust Areas",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "View All Sponsored Projects \u2192",
+        "href": "https://sgiarc.vercel.app/pages/projects.html"
+      },
+      {
+        "text": "Search Full Publications Repository \u2192",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Browse All Team Members \u2192",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Explore All Laboratories & Specs \u2192",
+        "href": "https://sgiarc.vercel.app/pages/facilities.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/about.html": {
+    "title": "About | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "Fostering Applied\n            Innovation in Central India"
+      },
+      {
+        "tag": "h4",
+        "text": "\ud83c\udfaf Our Vision"
+      },
+      {
+        "tag": "h4",
+        "text": "\ud83d\ude80 Our Mission"
+      },
+      {
+        "tag": "h3",
+        "text": "Institutional Pillars"
+      },
+      {
+        "tag": "h2",
+        "text": "Specialized Research Laboratories"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      }
+    ],
+    "paragraphs": [
+      "Shri Gajanan Innovation and Advanced Research Center (SGIARC)is the apex research body of\n            Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Established with a vision to transform regional\n            and national challenges into engineering solutions, SGIARC serves as a multidisciplinary incubator bridging\n            academic inquiry and industrial application.",
+      "Affiliated to Sant Gadge Baba Amravati University (SGBAU) as a recognized Ph.D. research center, SGIARC\n            oversees doctoral dissertations, AICTE & DST funded research schemes, patent filings, and high-performance\n            computing clusters.",
+      "To emerge as an internationally acclaimed center of excellence in interdisciplinary research, fostering\n                ethical innovation, societal prosperity, and sustainable technological leadership.",
+      "To cultivate rigorous academic and industrial research, mentor next-generation doctoral scholars, secure\n                high-impact sponsored grants, and translate inventions into granted patents and community solutions.",
+      "Artificial Intelligence, IoT telemetry, high-voltage power grids, and precision autonomous robotics.",
+      "Active patent portfolio with granted commercial patents and active technology transfer pipelines.",
+      "Collaborative research partnerships with TCS Innovation Labs, DRDO, State Power Utilities, and\n                  academic consortiums.",
+      "Cutting-edge equipment, high-performance computing clusters, and specialized experimental testbeds.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/collaborations.html": {
+    "title": "Collaborations & MoUs | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "Strategic Research MoUs"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Collaborative tie-ups fostering joint development, student research internships, sponsored testing, and\n          faculty exchange.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/research.html": {
+    "title": "Research Area | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "Research Areas"
+      },
+      {
+        "tag": "h3",
+        "text": "Five Research Pillars"
+      },
+      {
+        "tag": "h2",
+        "text": "Research Projects Directory"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Our research connects functional materials, microsystems, biosensing, portable instrumentation and\n          artificial intelligence to create next-generation technologies for healthcare and smart sensing.\n          The emphasis is on systems that are miniaturized, intelligent, portable and translational.",
+      "Each pillar represents a connected layer of the research ecosystem-from sensing interfaces and device\n          fabrication\n          to signal interpretation and autonomous operation.",
+      "Explore ongoing, completed, and sponsored engineering research projects at SGIARC.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/researchers.html": {
+    "title": "Team | BioMID Lab",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "BioMID Lab Research Team"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Meet our dedicated researchers, scholars, and project innovators advancing biosensing, medical imaging, and\n          intelligent diagnostics.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/achievements.html": {
+    "title": "Patents and Innovation | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "Institutional Milestones & Patents"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Acknowledging excellence in experimental research, patent filings, national competitions, and technology\n          transfer.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/news.html": {
+    "title": "News & Research Events | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/projects.html": {
+    "title": "Projects | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade 'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/facilities.html": {
+    "title": "Research Facilities & Labs | SGIARC - SSGMCE Shegaon",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "Specialized Research Laboratories"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Cutting-edge equipment, high-performance computing clusters, and specialized experimental testbeds.",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  },
+  "pages/contact.html": {
+    "title": "Contact SGIARC | Shri Sant Gajanan Maharaj College of Engineering",
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Shri Gajanan Innovation & Advanced Research Center"
+      },
+      {
+        "tag": "h2",
+        "text": "Reach Out to SGIARC"
+      },
+      {
+        "tag": "h4",
+        "text": "Contact Secretariat"
+      },
+      {
+        "tag": "h3",
+        "text": "\ud83d\udd0d Search SGIARC"
+      }
+    ],
+    "paragraphs": [
+      "Whether you are an industry partner seeking technical collaboration, an academician proposing joint grants,\n            or a prospective doctoral candidate, our research secretariat is at your service.",
+      "SGIARC Research WingShri Sant Gajanan Maharaj College of EngineeringShegaon - 444 503, Dist. Buldhana, Maharashtra, India",
+      "Research Coordination:sgiarc@ssgmce.ac.inPrincipal Office:principal@ssgmce.ac.in",
+      "+91-7265-252478 / 252116 / 252117Mon - Sat: 9:30 AM to 5:30 PM IST",
+      "Directly accessible via Central Railway (Shegaon Railway Station - SEG). Nearest Airport: Aurangabad\n                (IXU) / Nagpur (NAG).",
+      "Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Accredited NAAC Grade\n            'A' and affiliated to SGBAU Amravati."
+    ],
+    "images": [
+      {
+        "src": "https://sgiarc.vercel.app/assets/logos/ssgmce-logo.png",
+        "alt": "SSGMCE Crest"
+      }
+    ],
+    "links": [
+      {
+        "text": "Shri Gajanan Innovation & Advanced Research Center",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "BioMID LabBiosensing, Microsystems and Intelligent Diagnostics",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About\u25be",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research\u25be",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Area",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Project",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "Home",
+        "href": "https://sgiarc.vercel.app/index.html"
+      },
+      {
+        "text": "About BioMID Lab",
+        "href": "https://sgiarc.vercel.app/pages/about.html"
+      },
+      {
+        "text": "Facilities & Labs",
+        "href": "https://sgiarc.vercel.app/pages/about.html#facilities"
+      },
+      {
+        "text": "Collaboration",
+        "href": "https://sgiarc.vercel.app/pages/collaborations.html"
+      },
+      {
+        "text": "Research",
+        "href": "https://sgiarc.vercel.app/pages/research.html"
+      },
+      {
+        "text": "Research Projects",
+        "href": "https://sgiarc.vercel.app/pages/research.html#projects"
+      },
+      {
+        "text": "Publications",
+        "href": "https://sgiarc.vercel.app/pages/publications.html"
+      },
+      {
+        "text": "Team",
+        "href": "https://sgiarc.vercel.app/pages/researchers.html"
+      },
+      {
+        "text": "Patents and Innovation",
+        "href": "https://sgiarc.vercel.app/pages/achievements.html"
+      },
+      {
+        "text": "News & Events",
+        "href": "https://sgiarc.vercel.app/pages/news.html"
+      },
+      {
+        "text": "Contact Us",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "principal@ssgmce.ac.in",
+        "href": "mailto:principal@ssgmce.ac.in"
+      },
+      {
+        "text": "sgiarc@ssgmce.ac.in",
+        "href": "mailto:sgiarc@ssgmce.ac.in"
+      },
+      {
+        "text": "SSGMCE Ecosystem",
+        "href": "https://www.ssgmce.ac.in/"
+      },
+      {
+        "text": "Campus Map",
+        "href": "https://sgiarc.vercel.app/pages/contact.html#campus-map"
+      },
+      {
+        "text": "Research Inquiries",
+        "href": "https://sgiarc.vercel.app/pages/contact.html"
+      }
+    ]
+  }
+}

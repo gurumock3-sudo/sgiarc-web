@@ -1,0 +1,928 @@
+// Automatically compiled verified dataset from Google Scholar and D:/sgiarc docx files
+
+export interface Publication {
+  title: string;
+  link: string;
+  authors: string;
+  venue: string;
+  citations: string;
+  year: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role?: string;
+  designation?: string;
+  projectName?: string;
+  projectDescription?: string;
+  contact?: string;
+  bio?: string;
+  category: 'PI' | 'Researcher';
+}
+
+export interface Collaborator {
+  name: string;
+  institution: string;
+  expertise: string;
+  category: 'International' | 'National';
+}
+
+export interface Equipment {
+  sr: string;
+  equipment: string;
+  make: string;
+  model: string;
+  serial: string;
+  details: string;
+  qty: string;
+}
+
+export interface ResearchArea {
+  title: string;
+  description: string;
+}
+
+export const RESEARCH_AREAS: ResearchArea[] = [
+  {
+    "title": "AI-Enabled Point-of-Care Diagnostics",
+    "description": "Development of intelligent point-of-care systems that combine biosensors, machine learning, deep learning and smartphone-based analysis for rapid biomarker quantification and clinical decision support. Research includes ML-assisted ECL/electrochemical sensing, deep-learning-based optical analysis, colorimetric diagnostics and emerging explainable and edge-AI approaches for healthcare applications. Your ACS Sensors review specifically connects ML-assisted biosensing with clinical PoCT decision-making."
+  },
+  {
+    "title": "Electrochemiluminescence & Chemiluminescence Biosensing",
+    "description": "Design of highly sensitive ECL and CL platforms for biochemical and molecular detection using compact electrode configurations, luminescent reactions and portable imaging. The work spans glucose, lactate, dopamine, choline, cholesterol, vitamin B12, vitamin C and other clinically relevant analytes, including multiplexed and simultaneous detection. Your publication record contains a substantial sequence of ECL studies using single, bipolar and multi-well configurations."
+  },
+  {
+    "title": "Microfluidic, Paper-Based & 3D-Printed Devices",
+    "description": "Development of low-cost miniaturized diagnostic platforms using microfluidics, paper substrates, wax/screen printing and additive manufacturing. Research focuses on integrating sample handling, sensing, reaction chambers and readout into compact devices suitable for resource-limited and decentralized testing. Recent studies include intelligent microfluidic plasma separation, paper-based CL sensors and portable 3D-printed ECL systems."
+  },
+  {
+    "title": "Advanced Electrodes & Functional Materials for Biosensing",
+    "description": "Exploration of functional electrode materials and scalable fabrication methods for improving sensitivity, selectivity and device miniaturization. Research includes laser-induced graphene, laser-ablated reduced graphene oxide, carbon-thread electrodes, graphite electrodes, MWCNT\u2013CuO structures and emerging Bio-FET materials such as graphene, MoS\u2082 and carbon nanotubes. These materials provide the interface between molecular recognition and electrical or optical signal generation."
+  },
+  {
+    "title": "MEMS, Smart Energy Harvesting & Microfluidic Power Systems",
+    "description": "Research on miniaturized energy systems for autonomous and portable electronics, including MEMS-based energy scavengers, piezoelectric structures, computational optimization and machine-learning-assisted performance prediction. This direction is now extending toward paper-based microfluidic energy systems, including recent work on substrate-engineered aluminum\u2013air fuel cells for compact and off-grid applications."
+  }
+];
+
+export const EQUIPMENT_LIST: Equipment[] = [
+  {
+    "sr": "2",
+    "equipment": "Double-Beam UV-Vis Spectrophotometer with Software",
+    "make": "BioEra Life Sciences Pvt. Ltd.",
+    "model": "Model Elite; current official Cat. No. BE/CI/SP/DB-S-04",
+    "serial": "V-12-11-008",
+    "details": "Existing unit: 220 V, 50 Hz, 50 W. Current official model: 190\u20131100 nm; 1 nm bandwidth; \u00b10.5 nm wavelength accuracy.\nOnline reference / image source: Official product page  [Manufacturer]",
+    "qty": "1"
+  },
+  {
+    "sr": "3",
+    "equipment": "Laboratory Centrifuge",
+    "make": "REMI",
+    "model": "R-8C",
+    "serial": "Handwritten marking: DELC-4363 / CE-R8C / 4/11 (verify physically)",
+    "details": "Existing record: 5250 rpm; 1.45 A; 220/230 V, 50 Hz. Official R-8C: max. 5250 rpm; max. capacity 300 mL.\nOnline reference / image source: Official REMI product page  [Manufacturer]",
+    "qty": "1"
+  },
+  {
+    "sr": "4",
+    "equipment": "Analytical / Semi-Micro Balance",
+    "make": "Denver Instrument, Germany",
+    "model": "TB-215D",
+    "serial": "25709850",
+    "details": "60/210 g capacity; 0.01/0.1 mg readability; approx. 80 mm pan; internal calibration; RS-232.\nOnline reference / image source: Exact-model image reference  |  Specs / manual reference  [Exact-model marketplace images + manufacturer-era manual/specification reference]",
+    "qty": "1"
+  },
+  {
+    "sr": "5",
+    "equipment": "3D Printer",
+    "make": "Bambu Lab",
+    "model": "X2D Combo",
+    "serial": "Serial not stated; Quotation SO277575 (19-Aug-2026)",
+    "details": "Combo 3D printer. Quotation also includes 1.75 mm filament: PLA Basic Black, Jade White and Blue (reusable spools), plus ABS Blue refill. Filaments are treated as consumables, not separate equipment.\nOnline reference / image source: Robu product / image page  [Supplier named in quotation]",
+    "qty": "1"
+  },
+  {
+    "sr": "6",
+    "equipment": "Analytical Balance",
+    "make": "LabMart",
+    "model": "300 g \u00d7 0.001 g",
+    "serial": "Serial not stated; Order 405-8974422-4552366 (18-Aug-2026)",
+    "details": "300 g capacity; 0.001 g (1 mg) precision; glass draft shield; piece counting; tare function; calibration certificate; 200 g test weight; RS232 port.\nOnline reference / image source: LabMart product / image page  [Brand / supplier product page]",
+    "qty": "1"
+  },
+  {
+    "sr": "7",
+    "equipment": "Aspheric Ophthalmic Lens Set",
+    "make": "KASHURG",
+    "model": "78D + 90D + 20D",
+    "serial": "Serial not stated; Order 405-8003711-2673107 (07-Sep-2026)",
+    "details": "Aspheric lens set comprising 78D, 90D and 20D lenses, supplied in a premium case.\nOnline reference / image source: KASHURG product / image page  [Retail product page matching the ordered lens set]",
+    "qty": "1"
+  },
+  {
+    "sr": "8",
+    "equipment": "Silhouette Cutting Plotter",
+    "make": "MY PRINT / Silhouette (as listed)",
+    "model": "Portrait-4",
+    "serial": "Serial not stated; Order 405-9390170-3191563 (18-Aug-2026)",
+    "details": "Bluetooth wireless cutting plotter for craft/vinyl cutting; includes Silhouette Studio software (free software lifetime as stated in order).\nOnline reference / image source: MY PRINT product / image page  [Supplier product page]",
+    "qty": "1"
+  },
+  {
+    "sr": "9",
+    "equipment": "Professional Hot-Melt Glue Gun",
+    "make": "Crown Brand",
+    "model": "CR 159",
+    "serial": "Serial not stated; Order 408-9398722-1530766 (17-Aug-2026)",
+    "details": "150 W; silicone cover on nozzle for burn protection; temperature control; rapid heating; supplied with 5 glue sticks.\nOnline reference / image source: Crown CR 159 product / image page  [Indian product listing for model CR 159]",
+    "qty": "1"
+  },
+  {
+    "sr": "10",
+    "equipment": "A3 Lamination Machine",
+    "make": "Growlam",
+    "model": "GL-12",
+    "serial": "Serial not stated; Order 405-5519804-8745128 (18-Aug-2026)",
+    "details": "A3 lamination machine; metal body; hot and cold temperature settings.\nOnline reference / image source: Official Growlam product / image page  [Manufacturer]",
+    "qty": "1"
+  },
+  {
+    "sr": "11",
+    "equipment": "Benchtop Laboratory pH/mV Meter",
+    "make": "Bionexis",
+    "model": "BNPH002",
+    "serial": "Serial not stated; Order 405-7965803-9389969 (18-Aug-2026)",
+    "details": "0.01 pH resolution; \u00b10.01 accuracy; research-grade benchtop instrument for biotech, pharma, healthcare and chemical testing.\nOnline reference / image source: Official Bionexis product / image page  [Manufacturer]",
+    "qty": "1"
+  },
+  {
+    "sr": "12",
+    "equipment": "Soldering Iron Kit",
+    "make": "Serplex",
+    "model": "12-in-1, 80 W LCD kit",
+    "serial": "Serial not stated; Order 405-1733437-9413168 (18-Aug-2026)",
+    "details": "80 W LCD adjustable-temperature soldering iron; 180\u2013500 \u00b0C; ON/OFF switch; includes flux, 5 soldering tips, desoldering pump, stand and tweezers.\nOnline reference / image source: Serplex product / image page  [Retail product page matching the kit]",
+    "qty": "1"
+  },
+  {
+    "sr": "13",
+    "equipment": "Professional Wax Heater",
+    "make": "Hector",
+    "model": "Single-pot model (model no. not stated)",
+    "serial": "Serial not stated; Order 405-5276167-4285160 (18-Aug-2026)",
+    "details": "Professional single-pot wax heater with temperature control; listed for salon/home use.\nOnline reference / image source: Official Hector product / image page  [Brand / manufacturer product page]",
+    "qty": "1"
+  }
+];
+
+export const COLLABORATORS: Collaborator[] = [
+  {
+    name: "Prof. Hossam Haick",
+    institution: "Technion \u2013 Israel Institute of Technology, Israel",
+    expertise: "Nanomaterial-based sensors, Bio-FETs, non-invasive diagnostics, wearable/flexible sensors, AI-enabled sensing",
+    category: 'International'
+  },
+  {
+    name: "Dr. Prakash Rewatkar",
+    institution: "Technion \u2013 Israel Institute of Technology, Israel",
+    expertise: "Microfluidics, electrochemical systems, biofuel cells, redox-flow batteries and energy harvesting",
+    category: 'International'
+  },
+  {
+    name: "Prof. Haridimos Kondylakis",
+    institution: "University of Crete & FORTH-ICS, Greece",
+    expertise: "Big Data Engineering, health-data integration, federated learning, semantics, AI and biomedical information systems",
+    category: 'International'
+  },
+  {
+    name: "Dr. Karen L\u00f3pez-Linares Rom\u00e1n",
+    institution: "Vicomtech, Spain",
+    expertise: "Medical image analysis, deep learning, domain adaptation, CT/MRI analysis and AI-assisted clinical imaging",
+    category: 'International'
+  },
+  {
+    name: "Dr. Iv\u00e1n Mac\u00eda Oliver",
+    institution: "Vicomtech, Spain",
+    expertise: "Digital health, biomedical technologies, medical image analysis, AI, clinical decision-support systems",
+    category: 'International'
+  },
+  {
+    name: "Prof. Rajnish Kaur Calay",
+    institution: "UiT \u2013 The Arctic University of Norway, Norway",
+    expertise: "Energy and environmental engineering, microbial fuel cells, water-quality sensing, machine learning and sustainable technologies",
+    category: 'International'
+  },
+  {
+    name: "Prof. William Reis de Araujo",
+    institution: "Institute of Chemistry, University of Campinas \u2013 UNICAMP, Brazil",
+    expertise: "Electrochemical biosensors, paper-based devices, wearable sensors, microfluidics, portable and low-cost analytical systems",
+    category: 'International'
+  },
+  {
+    name: "Prof. Weiwei Wu",
+    institution: "School of Advanced Materials & Nanotechnology, Xidian University, China",
+    expertise: "Functional nanomaterials, AI-enabled nanosensors, gas/breath sensing, wearable sensors, electronic skin and electrochemical sensing",
+    category: 'International'
+  },
+  {
+    name: "Prof. Ritu Gupta",
+    institution: "Indian Institute of Technology Delhi, India",
+    expertise: "MEMS, microfluidics, biosensors, ECL/CL, laser-induced graphene, PoCT",
+    category: 'National'
+  },
+  {
+    name: "Prof. Sanket Goel",
+    institution: "BITS Pilani, Hyderabad Campus",
+    expertise: "MEMS, microfluidics, biosensors, ECL/CL, laser-induced graphene, PoCT",
+    category: 'National'
+  },
+  {
+    name: "Prof. Prasant Kumar Pattnaik",
+    institution: "BITS Pilani, Hyderabad Campus",
+    expertise: "MEMS/MOEMS, photonics, microfluidics and sensing",
+    category: 'National'
+  },
+  {
+    name: "Dr. Madhusudan B. Kulkarni",
+    institution: "Manipal Institute of Technology, MAHE",
+    expertise: "BioMEMS, microfluidics, biosensors, portable diagnostics and intelligent healthcare systems",
+    category: 'National'
+  },
+  {
+    name: "Dr. Suresh S. Balpande",
+    institution: "Ramdeobaba University, Nagpur",
+    expertise: "MEMS, energy harvesting, piezoelectric/triboelectric systems and intelligent sensors",
+    category: 'National'
+  },
+  {
+    name: "Dr. Jitendra B. Zalke",
+    institution: "Ramdeobaba University, Nagpur",
+    expertise: "Electrochemical/optical biosensing, CL/ECL, wearable sensing and intelligent diagnostics",
+    category: 'National'
+  },
+];
+
+export const TEAM_MEMBERS: TeamMember[] = [
+  {
+    name: "Atharv Vishal Sadavarte",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Brain Tumor Detection and Classification Using Deep Learning",
+    projectDescription: "Developed a deep learning-based brain tumor detection and classification system using MRI images, employing transfer learning, advanced preprocessing, augmentation, and explainable AI techniques for accurate multi-class tumor classification.",
+    contact: "SSGM_308103@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Kamran Ali",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Explainable AI for Atrial Fibrillation Detection Using 12-Lead ECG",
+    projectDescription: "Developed a deep learning system for automated detection of Atrial Fibrillation from 12-lead ECG signals.\nThe project uses a 1D U-Net architecture to learn important patterns from ECG recordings.\nThe workflow includes ECG preprocessing, model training, validation, testing, and performance evaluation.\nGrad-CAM is used to explain the model's predictions by highlighting important regions of the ECG signal.",
+    contact: "SSGM_309077@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Piyush Dawange",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Known and Unknown Crop Diseases Recognition",
+    projectDescription: "Currently working as an intern at Biospectronics, contributing to an AI-based agricultural crop disease detection project focused on crops prevalent in Maharashtra and India. The project involves leveraging Artificial Intelligence and Machine Learning techniques to detect and classify crop diseases from plant images, supporting smarter and more efficient agricultural practices.",
+    contact: "SSGM_308608@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Tanushri Pravin Khawale",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Explainable Oral Cancer Recognition Using Informed Deep Learning and Case-Based Reasoning",
+    projectDescription: "Developing an explainable AI-based system for oral cancer recognition from clinical images. The proposed approach integrates IDL with medical knowledge and CBR to provide visual explanations through similar past cases. The system is designed to handle imperfect images and improve the transparency and reliability of oral cancer screening.",
+    contact: "SSGM_308675@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Ummehani Sayyad",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Arrhythmia detection using Self-Supervised learning In both In distribution and out of distribution settings",
+    projectDescription: "Comparing SimCLR, BYOL and SwAV Self-Supervised learning methods in both ID and OOD settings and detect the arrhythmia.",
+    contact: "SSGM_308677@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Ritika Manojkumar Chaudhari",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Alzheimer's Disease Detection Using CNN Optimized with Particle Swarm Optimization (PSO) on MRI Images",
+    projectDescription: "This project focuses on detecting Alzheimer's disease from MRI brain images using deep learning. A Convolutional Neural Network (CNN) is used for image classification, while Particle Swarm Optimization (PSO) is used to optimize the CNN architecture and improve its performance. The project also compares different deep learning models to achieve accurate and reliable detection..",
+    contact: "SSGM_309044@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Dr. Manish Bhaiyya",
+    role: "Principal Investigator",
+    designation: "Associate Professor & Principal Investigator, BioMID Lab",
+    projectName: "Intelligent Biosensing, Point-of-Care Microfluidics & Edge-AI Diagnostics",
+    projectDescription: "Translational laboratory platform developing affordable, smartphone-connected and AI-driven diagnostic instruments.",
+    contact: "manishbhaiyya@ssgmce.ac.in",
+    bio: "Dr. Manish Bhaiyya is an Associate Professor in the Department of Electronics and Telecommunication Engineering and the Principal Investigator of the BioMID Lab, where he leads interdisciplinary research at the convergence of biosensors, micro/nanotechnology, point-of-care diagnostics, and artificial intelligence.\n\nHe received his Ph.D. from BITS Pilani and subsequently carried out postdoctoral research at the Technion \u2013 Israel Institute of Technology, Israel. His research interests include portable and smartphone-integrated biosensing systems, electrochemiluminescence and chemiluminescence sensing, MEMS and microfluidic devices, micro/nanofabrication, functional sensing interfaces, and AI/ML-assisted biomedical diagnostics.\n\nA major focus of his research is the development of portable, affordable, intelligent, and clinically relevant diagnostic technologies capable of translating complex biological signals into actionable information. His group particularly explores the integration of advanced sensing platforms with machine learning, deep learning, and data-driven decision-making for healthcare, disease screening, food safety, and real-world point-of-care applications.\n\nDr. Bhaiyya has authored more than 70 peer-reviewed publications in international journals spanning biosensing, analytical chemistry, biomedical engineering, micro/nanosystems, sensors, and artificial intelligence. His research has appeared in journals published by leading scientific publishers including ACS, Elsevier, Springer Nature, Wiley, IEEE, and others. He is also an inventor of patented electrochemiluminescence biosensing technology.\n\nIn addition to his research activities, Dr. Bhaiyya serves as an Associate Editor of Microsystem Technologies, a Springer Nature journal, contributing to the advancement and dissemination of research in microsystems, sensors, miniaturized devices, and emerging technologies.\n\nThrough the BioMID Lab, he aims to bridge the gap between materials and devices, sensing and intelligence, and laboratory innovation and real-world deployment, with a broader vision of developing next-generation intelligent diagnostic technologies that are accessible, scalable, and clinically meaningful.",
+    category: 'PI'
+  },
+  {
+    name: "Chetan Gajanan Itware",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "Skin Cancer Detection & Classification",
+    projectDescription: "Developed a deep learning\u2013based skin cancer detection application capable of classifying dermoscopic images into 7 skin-lesion classes.\nThe application provides the predicted class, confidence score, contributing factors/reasons, and precautionary recommendations to support user understanding.\nDesigned an end-to-end pipeline involving image preprocessing, augmentation, model training, performance evaluation, and external validation for robust skin-lesion classification.\nTwo research papers based on this work have been submitted for publication.",
+    contact: "SSGM_308323@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+  {
+    name: "Om Prashant Gond",
+    role: "Researcher / Scholar",
+    designation: "Research Scholar",
+    projectName: "\"A trustworthy multimodal AI for chest disease diagnosis and patient risk analysis \"",
+    projectDescription: "\"A trustworthy multimodal AI system for chest disease diagnosis and patient risk analysis using medical images and clinical data.\nIt combines X-ray analysis, patient metadata information to identify potential diseases and assess risk.\nThe system provides interpretable, confidence-aware predictions to support doctors in making safer and more informed clinical decisions.\"",
+    contact: "SSGM_309393@ssgmce.ac.in",
+    bio: "",
+    category: 'Researcher'
+  },
+];
+
+export const PUBLICATIONS: Publication[] = [
+  {
+    "title": "Role of machine learning assisted biosensors in point-of-care-testing for clinical decisions",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:YOwf2qJgpHMC",
+    "authors": "M Bhaiyya, D Panigrahi, P Rewatkar, H Haick",
+    "venue": "ACS sensors 9 (9), 4495",
+    "citations": "230",
+    "year": "2024"
+  },
+  {
+    "title": "A brief review on miniaturized electrochemiluminescence devices: From fabrication to applications",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:Tyk-4Ss8FVUC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "Current Opinion in Electrochemistry 30, 100800",
+    "citations": "85",
+    "year": "2021"
+  },
+  {
+    "title": "Artificial intelligence for food safety: From predictive models to real-world safeguards",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:-f6ydRqryjwC",
+    "authors": "P Balakrishnan, AA Leema, N Jothiaruna, PJ Assudani, K Sankar, ...",
+    "venue": "Trends in Food Science & Technology 163, 105153",
+    "citations": "83",
+    "year": "2025"
+  },
+  {
+    "title": "Miniaturized electrochemiluminescence platform with laser-induced graphene electrodes for multiple biosensing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:9yKSN-GCB0IC",
+    "authors": "M Bhaiyya, P Rewatkar, M Salve, PK Pattnaik, S Goel",
+    "venue": "IEEE Transactions on NanoBioscience 20 (1), 79-85",
+    "citations": "61",
+    "year": "2020"
+  },
+  {
+    "title": "Towards intelligent food safety: Machine learning approaches for aflatoxin detection and risk prediction",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:IWHjjKOFINEC",
+    "authors": "MT Deshmukh, PR Wankhede, N Chakole, PD Kale, MR Jadhav, ...",
+    "venue": "Trends in Food Science & Technology 161, 105055",
+    "citations": "58",
+    "year": "2025"
+  },
+  {
+    "title": "Advanced materials for biological field\u2010effect transistors (Bio\u2010FETs) in precision healthcare and biosensing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:ZeXyd9-uunAC",
+    "authors": "M Pandey, M Bhaiyya, P Rewatkar, JB Zalke, NP Narkhede, H Haick",
+    "venue": "Advanced Healthcare Materials 14 (13), 2500400",
+    "citations": "56",
+    "year": "2025"
+  },
+  {
+    "title": "Artificial intelligence and machine learning for colorimetric detections: Techniques, applications, and future prospects",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:hFOr9nPyWt4C",
+    "authors": "A Parakh, A Awate, SM Barman, RK Kadu, DP Tulaskar, MB Kulkarni, ...",
+    "venue": "Trends in Environmental Analytical Chemistry, e00280",
+    "citations": "53",
+    "year": "2025"
+  },
+  {
+    "title": "Simultaneous detection of Vitamin B12 and Vitamin C from real samples using miniaturized laser-induced graphene based electrochemiluminescence device with closed bipolar electrode",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:zYLM7Y9cAGgC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "Sensors and Actuators A: Physical 331, 112831",
+    "citations": "50",
+    "year": "2021"
+  },
+  {
+    "title": "Machine learning assisted and smartphone integrated homogeneous electrochemiluminescence biosensor platform for sample to answer detection of various human metabolites",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:kNdYIx-mwKoC",
+    "authors": "A Kumar, D Jain, J Bahuguna, M Bhaiyya, SK Dubey, A Javed, S Goel",
+    "venue": "Biosensors and Bioelectronics 238, 115582",
+    "citations": "49",
+    "year": "2023"
+  },
+  {
+    "title": "A machine learning approach for electrochemiluminescence based point of care testing device to detect multiple biomarkers",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:hqOjcs7Dif8C",
+    "authors": "SK Srivastava, M Bhaiyya, S Dudala, C Hota, S Goel",
+    "venue": "Sensors and Actuators A: Physical 350, 114135",
+    "citations": "47",
+    "year": "2023"
+  },
+  {
+    "title": "Deep learning-enhanced portable chemiluminescence biosensor: 3D-printed, smartphone-integrated platform for glucose detection",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:mVmsd5A6BfQC",
+    "authors": "CM Singhal, V Kaushik, A Awasthi, JB Zalke, S Palekar, P Rewatkar, ...",
+    "venue": "Bioengineering 12 (2), 119",
+    "citations": "46",
+    "year": "2025"
+  },
+  {
+    "title": "Artificial intelligence and machine learning in infectious disease diagnostics: A comprehensive review of applications, challenges, and future directions",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:e5wmG9Sq2KIC",
+    "authors": "PJ Assudani, AS Bhurgy, S Kollem, BS Bhurgy, O Ahmad, MB Kulkarni, ...",
+    "venue": "Microchemical Journal, 115802",
+    "citations": "42",
+    "year": "2025"
+  },
+  {
+    "title": "Electrochemiluminescence sensing of vitamin B12 using laser-induced graphene based bipolar and single electrodes in a 3D-printed portable system",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:qjMakFHDy7sC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "Microfluidics and Nanofluidics 25 (5), 41",
+    "citations": "42",
+    "year": "2021"
+  },
+  {
+    "title": "Optimization of MEMS-based Energy Scavengers and output prediction with machine learning and synthetic data approach",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:5nxA0vEk-isC",
+    "authors": "K Kahar, R Dhekekar, M Bhaiyya, SK Srivastava, P Rewatkar, S Balpande, ...",
+    "venue": "Sensors and Actuators A: Physical 358, 114429",
+    "citations": "41",
+    "year": "2023"
+  },
+  {
+    "title": "Internet of things\u2010enabled photomultiplier tube\u2010and smartphone\u2010based electrochemiluminescence platform to detect choline and dopamine using 3D\u2010printed closed bipolar electrodes",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:W7OEmFMy1HYC",
+    "authors": "M Bhaiyya, MB Kulkarni, PK Pattnaik, S Goel",
+    "venue": "Luminescence 37 (2), 357-365",
+    "citations": "41",
+    "year": "2022"
+  },
+  {
+    "title": "Miniaturized electrochemiluminescence platform with laser-induced graphene-based single electrode for interference-free sensing of dopamine, xanthine, and glucose",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:IjCSPb-OGe4C",
+    "authors": "ML Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "IEEE Transactions on Instrumentation and Measurement 70, 1-8",
+    "citations": "41",
+    "year": "2021"
+  },
+  {
+    "title": "Multiplexed and simultaneous biosensing in a 3D-printed portable six-well smartphone operated electrochemiluminescence standalone point-of-care platform",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:YsMSGLbcyi4C",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "Microchimica Acta 189 (2), 79",
+    "citations": "40",
+    "year": "2022"
+  },
+  {
+    "title": "A machine learning approach for simultaneous electrochemical detection of dopamine and serotonin in an optimized carbon thread-based miniaturized device",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:Zph67rFs4hoC",
+    "authors": "S Kumar, AK Bhagat, M Bhaiyya, K Amreen, SK Dubey, S Goel",
+    "venue": "IEEE Sensors Journal 24 (13), 21378-21385",
+    "citations": "35",
+    "year": "2024"
+  },
+  {
+    "title": "Flexible, label free and low-cost paper based microfluidic SERS substrates for thiram detection",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:0EnyYjriUFMC",
+    "authors": "TK Naqvi, A Bajpai, S Dwivedi, M Bhaiyya, S Goel, PK Dwivedi",
+    "venue": "Sensors and Actuators A: Physical 356, 114341",
+    "citations": "33",
+    "year": "2023"
+  },
+  {
+    "title": "Advancing indoor positioning systems: innovations, challenges, and applications in mobile robotics",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&citation_for_view=VBox-vcAAAAJ:hC7cP41nSMkC",
+    "authors": "RA Deshmukh, MA Hasamnis, MB Kulkarni, M Bhaiyya",
+    "venue": "Robotica, 1-41",
+    "citations": "32",
+    "year": "2025"
+  },
+  {
+    "title": "A machine learning assisted non-enzymatic electrochemical biosensor to detect urea based on multi-walled carbon nanotube functionalized with copper oxide micro-flowers",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:M3ejUd6NZC8C",
+    "authors": "JB Zalke, ML Bhaiyya, PA Jain, DN Sakharkar, J Kalambe, NP Narkhede, ...",
+    "venue": "Biosensors 14 (10), 504",
+    "citations": "32",
+    "year": "2024"
+  },
+  {
+    "title": "Stereolithography 3-D printed electrochemiluminescence platform with random grade graphite electrodes: Detection of HO and cholesterol using a smartphone",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:Se3iqnhoufwC",
+    "authors": "M Bhaiyya, PS Kumar, PK Pattnaik, K Shankar, S Goel",
+    "venue": "IEEE Sensors Journal 23 (1), 750-757",
+    "citations": "32",
+    "year": "2022"
+  },
+  {
+    "title": "Low\u2010cost fabrication of polymer substrate\u2010based piezoelectric microgenerator with PPE, IDE and ME",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:u-x6o8ySG0sC",
+    "authors": "SS Balpande, ML Bhaiyya, RS Pande",
+    "venue": "Electronics Letters 53 (5), 341-343",
+    "citations": "28",
+    "year": "2017"
+  },
+  {
+    "title": "Biosensing technologies for foodborne pathogen detection and healthcare: principles, emerging materials, and intelligent platforms",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:iH-uZ7U-co4C",
+    "authors": "PJ Assudani, B P, AL A, G George, A Avthankar, A Tiwari, M Bhaiyya, ...",
+    "venue": "Microchimica Acta 193 (4), 231",
+    "citations": "27",
+    "year": "2026"
+  },
+  {
+    "title": "Intelligent microfluidics for plasma separation: Integrating computational fluid dynamics and machine learning for optimized microchannel design",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:9ZlFYXVOiuMC",
+    "authors": "K Manekar, ML Bhaiyya, MA Hasamnis, MB Kulkarni",
+    "venue": "Biosensors 15 (2), 94",
+    "citations": "26",
+    "year": "2025"
+  },
+  {
+    "title": "Portable electrochemiluminescence platform with laser-induced graphene-based U-shaped bipolar electrode for selective sensing of various analytes",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:2osOgNQ5qMEC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "IEEE Transactions on Electron Devices 68 (5), 2447-2454",
+    "citations": "26",
+    "year": "2021"
+  },
+  {
+    "title": "Closed-bipolar mini electrochemiluminescence sensor to detect various biomarkers: A machine learning approach",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:3fE2CSJIrl8C",
+    "authors": "ML Bhaiyya, SK Srivastava, PK Pattnaik, S Goel",
+    "venue": "IEEE Transactions on Instrumentation and Measurement 72, 1-8",
+    "citations": "25",
+    "year": "2023"
+  },
+  {
+    "title": "A review on 3D-printed miniaturized devices for point-of-care-testing applications",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:qUcmZB5y_30C",
+    "authors": "AS Kulkarni, S Khandelwal, Y Thakre, J Rangole, MB Kulkarni, M Bhaiyya",
+    "venue": "Biosensors 15 (6), 340",
+    "citations": "24",
+    "year": "2025"
+  },
+  {
+    "title": "Deep learning-assisted smartphone-based electrochemiluminescence visual monitoring biosensor: a fully integrated portable platform",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:_kc_bZDykSQC",
+    "authors": "M Bhaiyya, P Rewatkar, A Pimpalkar, D Jain, SK Srivastava, J Zalke, ...",
+    "venue": "Micromachines 15 (8), 1059",
+    "citations": "24",
+    "year": "2024"
+  },
+  {
+    "title": "Portable 3D-printed electrochemiluminescence sensor for simultaneous glucose and lactate monitoring",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:TQgYirikUcIC",
+    "authors": "AS Kulkarni, S Khandelwal, K Manekar, PJ Assudani, R Girhe, ...",
+    "venue": "Scientific Reports 15 (1), 34592",
+    "citations": "20",
+    "year": "2025"
+  },
+  {
+    "title": "Novel 3D printed single electrode-based portable and miniaturized electrochemiluminescence platform to detect lactate from human serum",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:UebtZRa9Y70C",
+    "authors": "M Bhaiyya, P Rewatkar, PK Pattnaik, S Goel",
+    "venue": "Journal of Micromechanics and Microengineering 33 (2), 024001",
+    "citations": "20",
+    "year": "2023"
+  },
+  {
+    "title": "Laser ablated reduced graphene oxide on paper to realize single electrode electrochemiluminescence standalone miniplatform integrated with a smartphone",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:eQOLeE2rZwMC",
+    "authors": "ML Bhaiyya, S Gangrade, PK Pattnaik, S Goel",
+    "venue": "IEEE Transactions on Instrumentation and Measurement 71, 1-8",
+    "citations": "20",
+    "year": "2022"
+  },
+  {
+    "title": "Single-molecule detection technologies: advances in devices, transduction mechanisms, and functional materials for real-world biomedical and environmental applications",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:R3hNpaxXUhUC",
+    "authors": "SM Barman, A Parakh, AA Leema, P Balakrishnan, A Avthankar, ...",
+    "venue": "Biosensors 15 (10), 696",
+    "citations": "19",
+    "year": "2025"
+  },
+  {
+    "title": "A portable smartphone-based 3D-printed biosensing platform for kidney function biomarker quantification",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:L8Ckcad2t8MC",
+    "authors": "S Palekar, S Kalambe, J Kalambe, MB Kulkarni, M Bhaiyya",
+    "venue": "Biosensors 15 (3), 192",
+    "citations": "18",
+    "year": "2025"
+  },
+  {
+    "title": "Unusual electronic properties of cellulose nanocrystals conjugated to cobalt phthalocyanine: long-lived charge separation and visible-light-driven photocatalytic activity",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:LkGwnXOMwfcC",
+    "authors": "KM Alam, P Kumar, N Chaulagain, S Zeng, A Goswami, J Garcia, ...",
+    "venue": "The Journal of Physical Chemistry C 126 (37), 15635-15650",
+    "citations": "18",
+    "year": "2022"
+  },
+  {
+    "title": "Artificial intelligence for noninvasive health diagnostics",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:_Qo2XoVZTnwC",
+    "authors": "PR Wankhede, D Bhuyar, S Zanwar, R Pawar, MR Jadhav, N Gandhewar, ...",
+    "venue": "ACS sensors 10 (11), 8217-8255",
+    "citations": "17",
+    "year": "2025"
+  },
+  {
+    "title": "From drops to decisions: AI/ML-driven biofluidics for clinical diagnostics and healthcare intelligence",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:j3f4tGmQtD8C",
+    "authors": "MT Deshmukh, Y Thakre, WH Bisen, K Sankar, A Avthankar, AK Shahade, ...",
+    "venue": "Analytical Chemistry 98 (1), 24",
+    "citations": "16",
+    "year": "2025"
+  },
+  {
+    "title": "MEMS-based energy scavengers: journey and future",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:WF5omc3nYNoC",
+    "authors": "K Kahar, M Bhaiyya, R Dhekekar, G Gawande, S Balpande, S Goel",
+    "venue": "Microsystem Technologies 28 (9), 1971-1993",
+    "citations": "14",
+    "year": "2022"
+  },
+  {
+    "title": "MEMS based energy scavenger with interdigitated electrodes",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:ufrVoPGSRksC",
+    "authors": "K Kahar, R Dhekekar, M Bhaiyya, S Balpande, P Kale",
+    "venue": "Materials Today: Proceedings 72, 350-360",
+    "citations": "13",
+    "year": "2023"
+  },
+  {
+    "title": "Smartphone integrated 3D-printed standalone electrochemiluminescence platform for cholesterol detection",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:_FxGoFyzp5QC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "2022 IEEE International Symposium on Medical Measurements and Applications\u00a0\u2026",
+    "citations": "11",
+    "year": "2022"
+  },
+  {
+    "title": "IoT enabled PMT and smartphone based electrochemiluminescence platform to detect choline and dopamine using 3D-printed closed bipolar electrodes",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:Y0pCki6q_DkC",
+    "authors": "M Bhaiyya, MB Kulkarni, PK Pattnaik, S Goel",
+    "venue": "Luminescence 37 (2), 357-365",
+    "citations": "11",
+    "year": "2021"
+  },
+  {
+    "title": "AI and ML empowering 5G and shaping the 6G future: Models, metrics, architectures, and applications",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:4JMBOYKVnBMC",
+    "authors": "DP Tulaskar, B Sindhu, N Chakole, R Parteki, AA Leema, P Balakrishnan, ...",
+    "venue": "ICT Express",
+    "citations": "10",
+    "year": "2025"
+  },
+  {
+    "title": "Federated Learning in Multimodal Healthcare Diagnostics: Privacy-Preserving AI for Biomedical Imaging, Electronic Health Records, Wearables, and Clinical Decision Support",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:M3NEmzRMIkIC",
+    "authors": "S Nemane, VM Sarad, D P Tulaskar, TP Marode, V Bhangdiya, L Agrawal, ...",
+    "venue": "Archives of Computational Methods in Engineering, 1-34",
+    "citations": "8",
+    "year": "2026"
+  },
+  {
+    "title": "Benchmarking single source fabrication approach for chemiluminescence, electrochemiluminescence, and electrochemical techniques: Experimental validation via choline detection",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:4DMP91E08xMC",
+    "authors": "MD Wagh, PS Kumar, M Bhaiyya, A Kumar, S Goel",
+    "venue": "Sensors and Actuators A: Physical 382, 116147",
+    "citations": "8",
+    "year": "2025"
+  },
+  {
+    "title": "Machine learning-assisted paper-based chemiluminescence biosensor for choline quantification in infant milk: toward portable nutritional quality monitoring",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:isC4tDSrTZIC",
+    "authors": "JB Zalke, V Kaushik, CM Singhal, MB Kulkarni, M Bhaiyya",
+    "venue": "Scientific Reports",
+    "citations": "7",
+    "year": "2026"
+  },
+  {
+    "title": "Interpretable deep learning in dermoscopy: an XAI-driven ensemble for skin lesion diagnosis",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:TFP_iSt0sucC",
+    "authors": "BS Sonune, R Udaykumar, SG Nemane, DP Tulaskar, M Bhaiyya, ...",
+    "venue": "IEEE Access",
+    "citations": "7",
+    "year": "2026"
+  },
+  {
+    "title": "AI-driven multimodal retinal imaging for early detection and risk stratification of vascular and neurodegenerative diseases",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:maZDTaKrznsC",
+    "authors": "L Agrawal, PK Agrawal, SS Agrawal, MS Sonune, RK Kadu, MB Kulkarni, ...",
+    "venue": "Graefe's Archive for Clinical and Experimental Ophthalmology, 1-38",
+    "citations": "6",
+    "year": "2026"
+  },
+  {
+    "title": "Artificial intelligence meets nail diagnostics: Emerging image-based sensing platforms for non-invasive disease detection",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:r0BpntZqJG4C",
+    "authors": "TP Marode, VK Bhangdiya, S Nemane, D Tulaskar, VM Sarad, K Sankar, ...",
+    "venue": "Bioengineering 13 (1), 75",
+    "citations": "6",
+    "year": "2026"
+  },
+  {
+    "title": "Nanotechnology-driven triboelectric nanogenerators: Materials, mechanisms, applications, and sustainable pathways to commercialization",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:HDshCWvjkbEC",
+    "authors": "R Girhe, M Bhaiyya, P Rewatkar, K Kahar, PR Wankhede, AS Kulkarni, ...",
+    "venue": "Journal of Electronic Materials 54 (12), 10789-10823",
+    "citations": "4",
+    "year": "2025"
+  },
+  {
+    "title": "Copper mesh electrodes based energy harvester",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:u5HHmVD_uO8C",
+    "authors": "M Bhaiyya, P Gawatre, S Balpande, RS Pande",
+    "venue": "2016 IEEE Students\u2019 Technology Symposium (TechSym), 126-130",
+    "citations": "3",
+    "year": "2016"
+  },
+  {
+    "title": "Electrode fabrication techniques",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:QIV2ME_5wuYC",
+    "authors": "S Kumar, A Kumar, KS Deepak, M Bhaiyya, A Balapure, SK Dubey, ...",
+    "venue": "Micro Electromechanical Systems (MEMS) Practical Lab Manual, 59-70",
+    "citations": "2",
+    "year": "2025"
+  },
+  {
+    "title": "Microfluidic Devices",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:Wp0gIr-vW9MC",
+    "authors": "A Pal, P Sai Kumar, SA Lahari, S Fande, A Kumar, M Bhaiyya, S Dudala, ...",
+    "venue": "Micro Electromechanical Systems (MEMS) Practical Lab Manual, 105-134",
+    "citations": "2",
+    "year": "2025"
+  },
+  {
+    "title": "Beyond myocardial infarction: Point-of-care cardiac troponin biosensors for heart failure prognosis and remote monitoring",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:O3NaXMp0MMsC",
+    "authors": "NA Rangnath, K Sankar, PS Agrawal, HM Panchabudhe, NS Ingole, ...",
+    "venue": "Bioelectrochemistry, 109433",
+    "citations": "1",
+    "year": "2026"
+  },
+  {
+    "title": "Interpretable Skin Cancer Identification Using a Hybrid Deep Learning and XAI Framework on HAM10000",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:hMod-77fHWUC",
+    "authors": "BS Sonune, RU Kumar, K Sankar, PS Agrawal, SG Nemane, DP Tulaskar, ...",
+    "venue": "Bioengineering 13 (6), 677",
+    "citations": "1",
+    "year": "2026"
+  },
+  {
+    "title": "Substrate-driven optimization of microfluidic aluminum\u2013air fuel cells: a comparative study of glass fiber vs. cellulose paper",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:k_IJM867U9cC",
+    "authors": "PJ Assudani, R Lavanya, S Samala, CR Prasad, M Karthik, P Rewatkar, ...",
+    "venue": "Scientific Reports",
+    "citations": "1",
+    "year": "2026"
+  },
+  {
+    "title": "Graphite electrode based bipolar electrode electrochemiluminescence portable platform for point-of-care-testing applications",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:mB3voiENLucC",
+    "authors": "A Khaire, B Rana, A Awasthi, S Palekar, M Bhaiyya, J Kalambe",
+    "venue": "2025 IEEE Applied Sensing Conference (APSCON), 395-398",
+    "citations": "1",
+    "year": "2025"
+  },
+  {
+    "title": "Laser Processing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:dhFuZR0502QC",
+    "authors": "P Sai Kumar, A Kumar, M Bhaiyya, S Goel",
+    "venue": "Micro Electromechanical Systems (MEMS) Practical Lab Manual, 41-51",
+    "citations": "1",
+    "year": "2025"
+  },
+  {
+    "title": "Insight into 3D Printed Eight Well Electrochemiluminescence Biosensing Platforms with Shared Cathode: Towards Multiplexed Sensing",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:KlAtU1dfN6UC",
+    "authors": "A Kumar, M Bhaiyya, SK Dubey, A Javed, S Goel",
+    "venue": "International Conference on Micro/Nanoelectronics Devices, Circuits and\u00a0\u2026",
+    "citations": "1",
+    "year": "2023"
+  },
+  {
+    "title": "Machine Learning-Assisted Paper-Based Chemiluminescent Biosensing Platform for Rapid Detection of Hydrogen Peroxide Contaminant in Milk",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:ns9cj8rnVeAC",
+    "authors": "JB Zalke, V Kaushik, CM Singhal, MB Kulkarni, M Bhaiyya",
+    "venue": "Sensors and Actuators A: Physical, 118486",
+    "citations": "",
+    "year": "2026"
+  },
+  {
+    "title": "Designing multimodal food sensing systems: From functional materials to intelligent decision-making for real-world food analysis",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:GnPB-g6toBAC",
+    "authors": "MS Sonune, RK Kadu, L Agrawal, PK Agrawal, SS Agrawal, MB Kulkarni, ...",
+    "venue": "Journal of Food Composition and Analysis, 109453",
+    "citations": "",
+    "year": "2026"
+  },
+  {
+    "title": "Automated Skin Lesion and Cancer Detection Using Computer Vision: A Comprehensive Review",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:BqipwSGYUEgC",
+    "authors": "BS Sonune, U Ramanathan, DP Tulaskar, SG Nemane, MB Kulkarni, ...",
+    "venue": "Bioengineering 13 (8), 872",
+    "citations": "",
+    "year": "2026"
+  },
+  {
+    "title": "AI-Driven Transfer Learning for Medical Imaging and Sensor-Based Healthcare",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:YFjsv_pBGBYC",
+    "authors": "PJ Assudani, A Anny Leema, P Balakrishnan, S Kollem, R Pachlor, ...",
+    "venue": "Archives of Computational Methods in Engineering, 1-46",
+    "citations": "",
+    "year": "2026"
+  },
+  {
+    "title": "Comprehensive Study on Material Selection for Optimized Lateral Sliding-Mode Triboelectric Nanogenerators",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:NMxIlDl6LWMC",
+    "authors": "R Girhe, S Balpande, M Bhaiyya, K Kahar, P Rewatkar, M Kulkarni",
+    "venue": "2026 International Conference on Innovations in Communication, Geoscience\u00a0\u2026",
+    "citations": "",
+    "year": "2026"
+  },
+  {
+    "title": "IEEE Press Series on Sensors",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:7PzlFSSx8tAC",
+    "authors": "S Kumar, M Bhaiyya, K Amreen, PS Kumar, A Kumar",
+    "venue": "Wiley-IEEE Press",
+    "citations": "",
+    "year": "2025"
+  },
+  {
+    "title": "10 Cloth and Paper-Based",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:blknAaTinKkC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "Miniaturized Electrochemical Devices: Advanced Concepts, Fabrication, and\u00a0\u2026",
+    "citations": "",
+    "year": "2023"
+  },
+  {
+    "title": "Cloth and Paper-Based Miniaturized Electrochemiluminescence Platforms",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:MXK_kJrjxJIC",
+    "authors": "M Bhaiyya, PK Pattnaik, S Goel",
+    "venue": "Miniaturized Electrochemical Devices, 157-171",
+    "citations": "",
+    "year": "2023"
+  },
+  {
+    "title": "Miniaturized Portable Handheld Electrochemiluminescence Imaging System with Open Paper Bipolar Electrode",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:d1gkVwhDpl0C",
+    "authors": "M Bhaiyya, P Pattnaik, S Goel",
+    "venue": "Electrochemical Society Meeting Abstracts prime2020, 3864-3864",
+    "citations": "",
+    "year": "2020"
+  },
+  {
+    "title": "Disposable Electrochemiluminescence Sensors of Bacterial Spores",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:qxL8FJ1GzNcC",
+    "authors": "T Ylinen-Hinkka, A Niskanen, S Franssila, T Ala-Kleme, S Kulmala",
+    "venue": "Electrochemical Society Meeting Abstracts 214, 2823-2823",
+    "citations": "",
+    "year": "2008"
+  },
+  {
+    "title": "Low-Cost, Label Free and Flexible Paper Based Microfluidic Sers Sensors for Thiram Detection",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:JV2RwH3_ST0C",
+    "authors": "TK Naqvi, A Bajpai, M Bhaiyya, S Goel, P Dwivedi",
+    "venue": "Available at SSRN 4261951",
+    "citations": "",
+    "year": ""
+  },
+  {
+    "title": "ICT Express",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:bEWYMUwI8FkC",
+    "authors": "DP Tulaskar, B Sindhu, N Chakole, R Parteki, AA Leema, P Balakrishnan, ...",
+    "venue": "Artificial intelligence 5, 6G",
+    "citations": "",
+    "year": ""
+  },
+  {
+    "title": "Trends in Environmental Analytical Chemistry",
+    "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=VBox-vcAAAAJ&cstart=20&pagesize=80&citation_for_view=VBox-vcAAAAJ:RHpTSmoSYBkC",
+    "authors": "A Parakha, A Awate, SM Barman, RK Kadu, DP Tulaskar, MB Kulkarni, ...",
+    "venue": "",
+    "citations": "",
+    "year": ""
+  }
+];

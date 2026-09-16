@@ -14,7 +14,7 @@ interface NavItem {
   dropdown?: NavItem[];
 }
 
-const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
+const Header: React.FC<{ isHome?: boolean }> = ({ isHome: _isHome = false }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [navLinks, setNavLinks] = useState<NavItem[]>([]);

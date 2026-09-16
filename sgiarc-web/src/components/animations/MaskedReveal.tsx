@@ -1,12 +1,11 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React, { useRef, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface MaskedRevealProps {
   children: React.ReactNode;
   delay?: number;
   duration?: number;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
 }
 
 const MaskedReveal: React.FC<MaskedRevealProps> = ({ 
@@ -14,30 +13,39 @@ const MaskedReveal: React.FC<MaskedRevealProps> = ({
   delay = 0, 
   duration = 1.0, 
   className = "",
-  as: Component = "div" 
 }) => {
-  const ref = useRef(null);
-  // trigger as soon as it enters viewport (10% margin so it doesn't trigger when barely visible)
-  const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
+  const ref = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const containerVariants = {
-    hidden: { y: "100%" },
-    visible: { 
-      y: 0, 
-      transition: { 
-        duration: duration, 
-        delay: delay,
-        ease: [0.19, 1.0, 0.22, 1.0] // Stanford-esque silky smooth bezier
-      } 
-    }
-  };
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    // Use native IntersectionObserver - works regardless of Lenis
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // once only
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <div ref={ref} className="overflow-hidden relative inline-flex" style={{ verticalAlign: 'top' }}>
+    <div ref={ref} className="overflow-hidden" style={{ display: 'inline-block', verticalAlign: 'top' }}>
       <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
+        initial={{ y: '100%' }}
+        animate={isVisible ? { y: 0 } : { y: '100%' }}
+        transition={{ 
+          duration, 
+          delay,
+          ease: [0.19, 1.0, 0.22, 1.0]
+        }}
         className={className}
       >
         {children}
