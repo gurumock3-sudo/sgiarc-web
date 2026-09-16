@@ -1,0 +1,16 @@
+- generic [ref=f8e3]:
+  - generic [ref=f8e4]:
+    - heading "SGIARC Admin" [level=2] [ref=f8e6]
+    - navigation [ref=f8e7]:
+      - link "Dashboard" [ref=f8e8] [cursor=pointer]:
+        - /url: /admin
+      - link "Publications" [ref=f8e15] [cursor=pointer]:
+        - /url: /admin/publications
+      - link "Members" [ref=f8e20] [cursor=pointer]:
+        - /url: /admin/members
+      - link "Sections" [ref=f8e27] [cursor=pointer]:
+        - /url: /admin/sections
+      - link "Media Library" [ref=f8e34] [cursor=pointer]:
+        - /url: /admin/media
+    - button "Logout" [ref=f8e41]
+  - heading "Homepage Sections" [level=1] [ref=f8e49]

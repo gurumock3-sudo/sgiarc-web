@@ -1,0 +1,12 @@
+- generic [ref=f5e3]:
+  - status [ref=f5e25]: Database error querying schema
+  - generic [ref=f5e4]:
+    - heading "SGIARC Admin" [level=2] [ref=f5e5]
+    - generic [ref=f5e6]:
+      - generic [ref=f5e7]:
+        - generic [ref=f5e8]: Email
+        - textbox [ref=f5e9]: admin@sgiarc.edu
+      - generic [ref=f5e10]:
+        - generic [ref=f5e11]: Password
+        - textbox [ref=f5e12]: SecureAdminPassword123!
+      - button "Log In" [active] [ref=f5e13]

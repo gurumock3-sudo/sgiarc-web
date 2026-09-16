@@ -1,0 +1,49 @@
+- generic [ref=f7e3]:
+  - generic [ref=f7e4]:
+    - heading "SGIARC Admin" [level=2] [ref=f7e6]
+    - navigation [ref=f7e7]:
+      - link "Dashboard" [ref=f7e8] [cursor=pointer]:
+        - /url: /admin
+      - link "Publications" [ref=f7e15] [cursor=pointer]:
+        - /url: /admin/publications
+      - link "Members" [ref=f7e20] [cursor=pointer]:
+        - /url: /admin/members
+      - link "Sections" [ref=f7e27] [cursor=pointer]:
+        - /url: /admin/sections
+      - link "Media Library" [ref=f7e34] [cursor=pointer]:
+        - /url: /admin/media
+    - button "Logout" [ref=f7e41]
+  - generic [ref=f7e48]:
+    - generic [ref=f7e49]:
+      - heading "Publications Management" [level=1] [ref=f7e50]
+      - button "Add Publication" [active] [ref=f7e51]
+    - generic [ref=f7e62]:
+      - heading "New Publication" [level=2] [ref=f7e63]
+      - generic [ref=f7e64]:
+        - generic [ref=f7e65]:
+          - generic [ref=f7e66]: Title
+          - textbox [ref=f7e67]
+        - generic [ref=f7e68]:
+          - generic [ref=f7e69]: Authors
+          - textbox [ref=f7e70]
+        - generic [ref=f7e71]:
+          - generic [ref=f7e72]:
+            - generic [ref=f7e73]: Venue (Journal/Conference)
+            - textbox [ref=f7e74]
+          - generic [ref=f7e75]:
+            - generic [ref=f7e76]: Year
+            - spinbutton [ref=f7e77]: "2026"
+        - generic [ref=f7e78]:
+          - button "Save" [ref=f7e79]
+          - button "Cancel" [ref=f7e80]
+    - table [ref=f7e54]:
+      - rowgroup [ref=f7e55]:
+        - row [ref=f7e56]:
+          - columnheader "Title" [ref=f7e57]
+          - columnheader "Authors" [ref=f7e58]
+          - columnheader "Year" [ref=f7e59]
+          - columnheader "Status" [ref=f7e60]
+          - columnheader "Actions" [ref=f7e61]
+      - rowgroup [ref=f7e81]:
+        - row [ref=f7e82]:
+          - cell "No publications found." [ref=f7e83]
