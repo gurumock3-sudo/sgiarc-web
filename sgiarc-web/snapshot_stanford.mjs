@@ -7,10 +7,10 @@ async function snapshotStanford() {
   const page = await browser.newPage();
   
   await page.setViewportSize({ width: 1920, height: 1080 });
-  await page.goto('https://www.stanford.edu/', { waitUntil: 'networkidle', timeout: 60000 });
+  await page.goto('https://www.stanford.edu/', { waitUntil: 'domcontentloaded', timeout: 60000 });
   
   // Wait for the hero animation to settle
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(5000);
   
   const dir = 'stanford_snapshots';
   await fs.mkdir(dir, { recursive: true });

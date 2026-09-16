@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
-import GlobalHeader from '../stanford/GlobalHeader';
-import MainNav from '../stanford/MainNav';
+import StanfordHeader from '../stanford/StanfordHeader';
 import Footer from './Footer';
 
 const Layout: React.FC = () => {
@@ -36,11 +35,10 @@ const Layout: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col font-sans text-brand-charcoal overflow-x-hidden selection:bg-stanford-cardinal selection:text-white">
-      <GlobalHeader />
-      <MainNav />
+    <div className="min-h-screen flex flex-col font-sans text-brand-charcoal overflow-x-hidden selection:bg-stanford-cardinal selection:text-white bg-white">
+      <StanfordHeader />
       
-      <main className="flex-grow">
+      <main className="flex-grow pt-[112px]">
         <Outlet />
       </main>
       

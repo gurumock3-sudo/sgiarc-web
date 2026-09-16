@@ -26,6 +26,13 @@ const StanfordNewsEvents: React.FC = () => {
       title: "New AI Framework for Healthcare Diagnostics",
       date: "September 02, 2026",
       category: "Health"
+    },
+    {
+      id: 4,
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80",
+      title: "Researchers Publish High-Impact Findings in Nature",
+      date: "August 28, 2026",
+      category: "Publication"
     }
   ];
 
@@ -70,7 +77,7 @@ const StanfordNewsEvents: React.FC = () => {
           
           <div className="w-24 h-1 bg-stanford-cardinal mb-12"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-16">
             {news.map((item, idx) => (
               <motion.div 
                 key={item.id}
@@ -80,7 +87,7 @@ const StanfordNewsEvents: React.FC = () => {
                 transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.16, 1, 0.3, 1] }}
                 className="group cursor-pointer flex flex-col h-full"
               >
-                <div className="overflow-hidden mb-6 relative w-full aspect-video">
+                <div className="overflow-hidden mb-6 relative w-full aspect-[4/5] rounded-t-[10rem]">
                   <img 
                     src={item.image} 
                     alt={item.title} 
@@ -90,10 +97,10 @@ const StanfordNewsEvents: React.FC = () => {
                 <div className="text-stanford-cardinal font-bold font-sans text-xs uppercase tracking-widest mb-3">
                   {item.category}
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-stanford-black group-hover:text-stanford-cardinal transition-colors leading-snug mb-3">
+                <h3 className="text-xl font-serif font-bold text-stanford-black group-hover:text-stanford-cardinal transition-colors leading-snug mb-3">
                   {item.title}
                 </h3>
-                <p className="text-stanford-coolGrey font-sans text-sm mt-auto">
+                <p className="text-stanford-coolGrey font-sans text-sm mt-auto font-semibold">
                   {item.date}
                 </p>
               </motion.div>
