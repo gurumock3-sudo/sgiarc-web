@@ -60,7 +60,7 @@ const FeaturedProjectsSection: React.FC<{ title?: string, subtitle?: string }> =
               key={project.id} 
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "0px" }}
               transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="bg-stanford-lightGrey p-10 shadow-sm border-b-4 border-transparent hover:border-stanford-cardinal transition-all duration-300 group flex flex-col"
             >
