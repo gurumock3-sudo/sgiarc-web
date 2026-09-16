@@ -5,6 +5,8 @@ import StatsSection from '../components/sections/StatsSection';
 import ResearchAreasSection from '../components/sections/ResearchAreasSection';
 import FeaturedProjectsSection from '../components/sections/FeaturedProjectsSection';
 import TeamSnippetSection from '../components/sections/TeamSnippetSection';
+import PublicationsSnippetSection from '../components/sections/PublicationsSnippetSection';
+import AboutSnippetSection from '../components/sections/AboutSnippetSection';
 
 // Map component names from the database to actual React components
 const componentMap: Record<string, React.FC<any>> = {
@@ -13,6 +15,8 @@ const componentMap: Record<string, React.FC<any>> = {
   ResearchAreasSection,
   FeaturedProjectsSection,
   TeamSnippetSection,
+  PublicationsSnippetSection,
+  AboutSnippetSection,
 };
 
 interface SiteSection {

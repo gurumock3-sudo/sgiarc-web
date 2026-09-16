@@ -27,45 +27,56 @@ const Collaborators: React.FC = () => {
   const national = collaborators.filter(c => c.category === 'National');
 
   const renderCollab = (c: Collaborator, idx: number) => (
-    <motion.div key={c.id} initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: idx * 0.1 }} className="p-6 bg-white rounded border border-gray-100 shadow-sm flex flex-col h-full">
-      <h3 className="font-heading font-bold text-lg text-brand-charcoal mb-1">{c.name}</h3>
-      <p className="text-sm font-semibold text-brand-navy mb-3 flex items-start">
-        <MapPin className="w-4 h-4 mr-1 shrink-0 mt-0.5" />
+    <motion.div 
+      key={c.id} 
+      initial={{ opacity: 0, y: 30 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }} 
+      className="p-8 bg-white border-b-4 border-transparent hover:border-stanford-cardinal shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
+    >
+      <h3 className="font-serif font-bold text-2xl text-stanford-black group-hover:text-stanford-cardinal transition-colors mb-2">{c.name}</h3>
+      <p className="text-sm font-sans font-bold text-stanford-cardinal uppercase tracking-widest mb-4 flex items-start">
+        <MapPin className="w-4 h-4 mr-2 shrink-0 mt-0.5" />
         <span>{c.institution} ({c.country})</span>
       </p>
-      <div className="mt-auto">
-        <div className="text-xs uppercase text-gray-500 font-bold mb-1">Core Expertise</div>
-        <p className="text-sm text-gray-700 bg-brand-ivory p-2 rounded">{c.expertise}</p>
+      <div className="mt-auto pt-6">
+        <div className="text-xs uppercase text-stanford-coolGrey font-sans font-bold tracking-widest mb-2">Core Expertise</div>
+        <p className="text-lg text-stanford-coolGrey font-serif italic leading-relaxed">{c.expertise}</p>
       </div>
     </motion.div>
   );
 
   return (
-    <div className="w-full">
-      <div className="bg-brand-lavender/30 py-12 border-b border-gray-200">
-        <div className="container px-4 md:px-8">
-          <h1 className="text-4xl font-heading font-bold text-brand-charcoal mb-2">Collaboration</h1>
-          <p className="text-brand-navy font-semibold">Global & National Research Partnerships</p>
-        </div>
-      </div>
+    <div className="w-full pt-32 pb-24 bg-stanford-lightGrey min-h-screen">
+      <div className="container px-4 md:px-12 lg:px-24">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="mb-16">
+          <h1 className="text-5xl md:text-6xl font-serif font-bold text-stanford-black mb-6">Collaboration</h1>
+          <div className="w-24 h-1 bg-stanford-cardinal mb-6"></div>
+          <p className="text-xl text-stanford-coolGrey font-sans font-light max-w-3xl">Global & National Research Partnerships fostering joint development and innovation.</p>
+        </motion.div>
 
-      <div className="container px-4 md:px-8 py-12 space-y-12">
-        <div>
-          <h2 className="text-2xl font-heading font-bold mb-6 flex items-center border-b border-gray-200 pb-2">
-            <Globe className="w-6 h-6 mr-2 text-brand-accent" /> International Collaborators
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {intl.map((c, i) => renderCollab(c, i))}
-          </div>
-        </div>
+        <div className="space-y-20">
+          {intl.length > 0 && (
+            <div>
+              <h2 className="text-3xl font-serif font-bold mb-8 flex items-center border-b border-gray-300 pb-4 text-stanford-black">
+                International Collaborators
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {intl.map((c, i) => renderCollab(c, i))}
+              </div>
+            </div>
+          )}
 
-        <div>
-          <h2 className="text-2xl font-heading font-bold mb-6 flex items-center border-b border-gray-200 pb-2">
-            <MapPin className="w-6 h-6 mr-2 text-brand-accent" /> National Collaborators
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {national.map((c, i) => renderCollab(c, i))}
-          </div>
+          {national.length > 0 && (
+            <div>
+              <h2 className="text-3xl font-serif font-bold mb-8 flex items-center border-b border-gray-300 pb-4 text-stanford-black">
+                National Collaborators
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {national.map((c, i) => renderCollab(c, i))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

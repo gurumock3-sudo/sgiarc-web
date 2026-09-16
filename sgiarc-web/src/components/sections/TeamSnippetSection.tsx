@@ -21,39 +21,43 @@ const TeamSnippetSection: React.FC<{ title?: string, subtitle?: string }> = ({ t
   }, []);
 
   return (
-    <section className="section bg-brand-charcoal text-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-accent via-brand-lavender to-brand-navy"></div>
+    <section className="section bg-stanford-black text-white relative overflow-hidden">
       <div className="container relative z-10">
-        <div className="mb-12 text-center">
-          <div className="inline-block px-3 py-1 bg-white/10 text-brand-lavender rounded-full text-sm font-semibold mb-3 tracking-wider">Team</div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">{title || 'Research Team & Mentors'}</h2>
-          <div className="w-16 h-1 bg-brand-accent mx-auto mb-6"></div>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            {subtitle || 'Our doctorate research team leading funded labs, doctoral supervision, and student innovation teams.'}
-          </p>
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+          <div className="md:w-2/3">
+            <div className="text-stanford-cardinal font-bold font-sans tracking-widest uppercase text-sm mb-4">Leadership</div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 leading-tight">{title || 'Research Team & Scholars'}</h2>
+            <div className="w-16 h-1 bg-stanford-cardinal mb-6"></div>
+            <p className="text-stanford-coolGrey font-sans font-light text-xl max-w-2xl">
+              {subtitle || 'Our doctorate research team leading funded labs, doctoral supervision, and student innovation teams.'}
+            </p>
+          </div>
+          <Link to="/team" className="hidden md:inline-flex text-stanford-cardinal font-bold font-sans tracking-wide uppercase text-sm items-center hover:underline mt-8">
+            View All Members <span className="ml-2">→</span>
+          </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {team.map((member, idx) => (
             <motion.div 
               key={member.id}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="bg-white/5 border border-white/10 rounded-lg p-6 text-center hover:bg-white/10 transition-colors"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white/5 border border-white/10 p-8 text-center hover:bg-white/10 transition-colors group"
             >
-              <div className="w-24 h-24 mx-auto bg-gray-600 rounded-full mb-4 overflow-hidden shadow-lg border-2 border-brand-accent/50 flex items-center justify-center text-xs text-gray-300">
-                Photo
+              <div className="w-24 h-24 mx-auto bg-gray-200 mb-6 flex items-center justify-center font-sans tracking-widest uppercase text-gray-500 font-bold group-hover:scale-105 transition-transform duration-300">
+                {member.name.charAt(0)}
               </div>
-              <h3 className="text-lg font-heading font-bold mb-1">{member.name}</h3>
-              <p className="text-brand-accent text-sm font-semibold">{member.designation}</p>
+              <h3 className="text-xl font-serif font-bold mb-2">{member.name}</h3>
+              <p className="text-stanford-cardinal text-xs uppercase tracking-widest font-sans font-bold">{member.designation}</p>
             </motion.div>
           ))}
         </div>
 
-        <div className="text-center">
-          <Link to="/team" className="btn bg-brand-accent text-brand-charcoal hover:bg-white transition-colors">Browse All Team Members</Link>
+        <div className="text-center md:hidden">
+          <Link to="/team" className="btn btn-primary">Browse All Team Members</Link>
         </div>
       </div>
     </section>

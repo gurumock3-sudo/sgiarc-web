@@ -28,67 +28,73 @@ const Team: React.FC = () => {
   const researchers = members.filter(m => m.category === 'Researcher');
 
   return (
-    <div className="w-full">
-      <div className="bg-brand-lavender/30 py-12 border-b border-gray-200">
-        <div className="container px-4 md:px-8">
-          <h1 className="text-4xl font-heading font-bold text-brand-charcoal mb-2">Research Team</h1>
-          <p className="text-brand-navy font-semibold">The minds behind BioMID Lab</p>
-        </div>
-      </div>
+    <div className="w-full pt-32 pb-24 bg-stanford-lightGrey min-h-screen">
+      <div className="container px-4 md:px-12 lg:px-24">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="mb-16">
+          <h1 className="text-5xl md:text-6xl font-serif font-bold text-stanford-black mb-6">Research Team</h1>
+          <div className="w-24 h-1 bg-stanford-cardinal mb-6"></div>
+          <p className="text-xl text-stanford-coolGrey font-sans font-light">The minds behind BioMID Lab</p>
+        </motion.div>
 
-      <div className="container px-4 md:px-8 py-12">
         {/* Principal Investigator */}
-        <div className="mb-16">
-          <h2 className="text-2xl font-heading font-bold mb-6 border-b-2 border-brand-accent pb-2 inline-block">Principal Investigator</h2>
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-            {pis.map((pi) => (
-              <motion.div key={pi.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col md:flex-row bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden">
-                <div className="w-full md:w-1/3 bg-gray-100 min-h-[300px] flex items-center justify-center text-gray-400">
-                  <span className="text-sm">Photo</span>
-                </div>
-                <div className="w-full md:w-2/3 p-8">
-                  <h3 className="text-3xl font-heading font-bold text-brand-charcoal mb-2">{pi.name}</h3>
-                  <p className="text-brand-accent font-semibold mb-4 text-lg">{pi.designation}</p>
-                  <p className="text-gray-700 leading-relaxed mb-6 whitespace-pre-wrap">{pi.bio}</p>
-                  <a href={`mailto:${pi.email}`} className="inline-flex items-center text-brand-navy hover:text-brand-accent font-medium">
-                    <Mail className="w-4 h-4 mr-2" /> {pi.email}
-                  </a>
-                </div>
-              </motion.div>
-            ))}
+        {pis.length > 0 && (
+          <div className="mb-20">
+            <h2 className="text-3xl font-serif font-semibold text-stanford-black mb-8 border-b border-gray-300 pb-4">Principal Investigator</h2>
+            <div className="grid grid-cols-1 gap-8">
+              {pis.map((pi) => (
+                <motion.div key={pi.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex flex-col md:flex-row bg-white shadow-md border-b-4 border-stanford-cardinal overflow-hidden">
+                  <div className="w-full md:w-1/3 bg-gray-200 min-h-[400px] flex items-center justify-center text-gray-500 font-sans tracking-widest uppercase text-sm">
+                    {pi.name.charAt(0)}
+                  </div>
+                  <div className="w-full md:w-2/3 p-10 md:p-16 flex flex-col justify-center">
+                    <h3 className="text-4xl font-serif font-bold text-stanford-black mb-2">{pi.name}</h3>
+                    <p className="text-stanford-cardinal font-sans font-semibold tracking-wide uppercase text-sm mb-6">{pi.designation}</p>
+                    <p className="text-stanford-coolGrey font-sans text-lg leading-relaxed mb-8 whitespace-pre-wrap">{pi.bio || 'Leading research in Biosensing, Micro/Nanotechnology, Point-of-Care Diagnostics, and Artificial Intelligence.'}</p>
+                    {pi.email && (
+                      <a href={`mailto:${pi.email}`} className="inline-flex items-center text-stanford-cardinal hover:underline font-bold font-sans">
+                        <Mail className="w-5 h-5 mr-2" /> {pi.email}
+                      </a>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Researchers */}
-        <div>
-          <h2 className="text-2xl font-heading font-bold mb-6 border-b-2 border-brand-accent pb-2 inline-block">Researchers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {researchers.map((r, idx) => (
-              <motion.div key={r.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.1 }} className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 flex flex-col">
-                <div className="flex items-start mb-4">
-                   <div className="w-16 h-16 bg-gray-200 rounded-full shrink-0 mr-4 flex items-center justify-center text-xs text-gray-500">Photo</div>
-                   <div>
-                     <h3 className="text-xl font-heading font-bold text-brand-charcoal">{r.name}</h3>
-                     <p className="text-sm text-gray-500 font-semibold">{r.designation}</p>
-                   </div>
-                </div>
-                {r.project_title && (
-                  <div className="mt-2 mb-4 bg-brand-ivory p-3 rounded border border-gray-50 flex-grow">
-                    <div className="text-xs text-brand-navy font-bold uppercase tracking-wider mb-1 flex items-center">
-                      <BookOpen className="w-3 h-3 mr-1" /> Project
+        {researchers.length > 0 && (
+          <div>
+            <h2 className="text-3xl font-serif font-semibold text-stanford-black mb-8 border-b border-gray-300 pb-4">Researchers & Scholars</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {researchers.map((r, idx) => (
+                <motion.div key={r.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: idx * 0.1 }} className="bg-white shadow-sm border-t-4 border-transparent hover:border-stanford-cardinal transition-all duration-300 p-8 flex flex-col group">
+                  <h3 className="text-2xl font-serif font-bold text-stanford-black group-hover:text-stanford-cardinal transition-colors mb-1">{r.name}</h3>
+                  <p className="text-sm text-stanford-coolGrey font-sans uppercase tracking-widest font-semibold mb-6">{r.designation}</p>
+                  
+                  {r.project_title ? (
+                    <div className="mb-6 flex-grow">
+                      <div className="text-xs text-stanford-cardinal font-bold uppercase tracking-widest mb-2 flex items-center">
+                        <BookOpen className="w-4 h-4 mr-2" /> Project
+                      </div>
+                      <p className="text-lg font-serif text-stanford-black leading-snug">{r.project_title}</p>
                     </div>
-                    <p className="text-sm font-semibold text-brand-charcoal">{r.project_title}</p>
-                  </div>
-                )}
-                {r.email && (
-                  <a href={`mailto:${r.email}`} className="inline-flex items-center text-sm text-gray-600 hover:text-brand-navy mt-auto">
-                    <Mail className="w-3 h-3 mr-1" /> {r.email}
-                  </a>
-                )}
-              </motion.div>
-            ))}
+                  ) : (
+                    <div className="mb-6 flex-grow text-stanford-coolGrey font-sans">
+                      {r.bio}
+                    </div>
+                  )}
+
+                  {r.email && (
+                    <a href={`mailto:${r.email}`} className="inline-flex items-center text-sm font-sans font-bold text-stanford-coolGrey hover:text-stanford-cardinal mt-auto">
+                      <Mail className="w-4 h-4 mr-2" /> {r.email}
+                    </a>
+                  )}
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

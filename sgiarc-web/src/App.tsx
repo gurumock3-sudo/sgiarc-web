@@ -5,6 +5,8 @@ import Team from './pages/Team';
 import Collaborators from './pages/Collaborators';
 import Facilities from './pages/Facilities';
 import Research from './pages/Research';
+import About from './pages/About';
+import Publications from './pages/Publications';
 
 // Admin Imports
 import AdminLayout from './pages/admin/AdminLayout';
@@ -22,6 +24,8 @@ function App() {
         {/* Public Routes */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="publications" element={<Publications />} />
           <Route path="team" element={<Team />} />
           <Route path="collaboration" element={<Collaborators />} />
           <Route path="facilities" element={<Facilities />} />
