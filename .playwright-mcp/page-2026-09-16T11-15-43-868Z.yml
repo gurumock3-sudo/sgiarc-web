@@ -1,0 +1,13 @@
+- generic [ref=f3e3]:
+  - generic [ref=f3e4]: "[plugin:vite:css] [postcss] tailwindcss: D:/sgiarc/sgiarc-web/src/index.css:1:1: Cannot apply unknown utility class `hover:bg-opacity-90`"
+  - generic [ref=f3e5]: D:/sgiarc/sgiarc-web/src/index.css:1:0
+  - generic [ref=f3e6]: 1 | @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;7... | ^ 2 | 3 | @import "tailwindcss";
+  - generic [ref=f3e7]: at Input.error (D:\sgiarc\sgiarc-web\node_modules\postcss\lib\input.js:135:16) at Root.error (D:\sgiarc\sgiarc-web\node_modules\postcss\lib\node.js:166:32) at Object.Once (D:\sgiarc\sgiarc-web\node_modules\@tailwindcss\postcss\dist\index.js:10:7013) at async LazyResult.runAsync (D:\sgiarc\sgiarc-web\node_modules\postcss\lib\lazy-result.js:299:11) at async runPostCSS (file:///D:/sgiarc/sgiarc-web/node_modules/vite/dist/node/chunks/node.js:29886:19) at async compilePostCSS (file:///D:/sgiarc/sgiarc-web/node_modules/vite/dist/node/chunks/node.js:29870:6) at async compileCSS (file:///D:/sgiarc/sgiarc-web/node_modules/vite/dist/node/chunks/node.js:29800:26) at async TransformPluginContext.handler (file:///D:/sgiarc/sgiarc-web/node_modules/vite/dist/node/chunks/node.js:29271:47) at async EnvironmentPluginContainer.transform (file:///D:/sgiarc/sgiarc-web/node_modules/vite/dist/node/chunks/node.js:8172:14) at async loadAndTransform (file:///D:/sgiarc/sgiarc-web/node_modules/vite/dist/node/chunks/node.js:19634:26)
+  - generic [ref=f3e8]:
+    - text: Click outside, press Esc key, or fix the code to dismiss.You can also disable this overlay by setting
+    - code [ref=f3e9]: server.hmr.overlay
+    - text: to
+    - code [ref=f3e10]: "false"
+    - text: in
+    - code [ref=f3e11]: vite.config.ts
+    - text: .

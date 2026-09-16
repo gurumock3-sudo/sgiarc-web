@@ -1,0 +1,3 @@
+[     434ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/index.css:0
+[  108119ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5173/@vite/client:1030
+[  121656ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/index.css:0

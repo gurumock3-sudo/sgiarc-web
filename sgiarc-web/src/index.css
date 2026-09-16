@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-brand-ivory text-brand-charcoal font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading uppercase;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded font-semibold transition-colors duration-200 inline-block text-center;
+  }
+  .btn-primary {
+    @apply bg-brand-charcoal text-white hover:opacity-90;
+  }
+  .btn-navy {
+    @apply bg-brand-navy text-white hover:opacity-90;
+  }
+  .section {
+    @apply py-16 px-4 md:px-8;
+  }
+  .section-alt {
+    @apply bg-brand-lavender/30 py-16 px-4 md:px-8;
+  }
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 text-brand-charcoal;
+  }
+  .section-badge {
+    @apply inline-block px-3 py-1 bg-brand-lavender text-brand-navy rounded-full text-sm font-semibold mb-3 tracking-wider;
+  }
+  .divider-ssgmce {
+    @apply w-16 h-1 bg-brand-navy mb-6;
+  }
+}

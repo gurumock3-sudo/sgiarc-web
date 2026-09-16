@@ -1,0 +1,97 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "BioMID Lab Biosensing, Microsystems & Intelligent Diagnostics" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e7]: BioMID Lab
+        - generic [ref=e8]: Biosensing, Microsystems & Intelligent Diagnostics
+      - button [ref=e9]
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e30]: 70+
+          - generic [ref=e31]: Publications
+        - generic [ref=e32]:
+          - generic [ref=e36]: 70+
+          - generic [ref=e37]: Citations
+        - generic [ref=e38]:
+          - generic [ref=e41]: 10+
+          - generic [ref=e42]: Patents
+        - generic [ref=e43]:
+          - generic [ref=e49]: 15+
+          - generic [ref=e50]: Researchers
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e54]: Funded Initiatives
+          - heading "Featured Research Projects" [level=2] [ref=e55]
+          - paragraph [ref=e57]: High-impact sponsored research projects funded by national agencies and industry partners.
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: Project Visual
+            - heading "AI-Enabled Diagnostics" [level=3] [ref=e64]
+            - paragraph [ref=e65]: Developing an explainable AI-based system for early disease detection from clinical images, integrating deep learning with medical knowledge.
+            - link "Read Full Abstract" [ref=e66] [cursor=pointer]:
+              - /url: /projects
+          - generic [ref=e69]:
+            - generic [ref=e70]: Project Visual
+            - heading "AI-Enabled Diagnostics" [level=3] [ref=e74]
+            - paragraph [ref=e75]: Developing an explainable AI-based system for early disease detection from clinical images, integrating deep learning with medical knowledge.
+            - link "Read Full Abstract" [ref=e76] [cursor=pointer]:
+              - /url: /projects
+          - generic [ref=e79]:
+            - generic [ref=e80]: Project Visual
+            - heading "AI-Enabled Diagnostics" [level=3] [ref=e84]
+            - paragraph [ref=e85]: Developing an explainable AI-based system for early disease detection from clinical images, integrating deep learning with medical knowledge.
+            - link "Read Full Abstract" [ref=e86] [cursor=pointer]:
+              - /url: /projects
+        - link "View All Sponsored Projects" [ref=e90] [cursor=pointer]:
+          - /url: /projects
+  - contentinfo [ref=e91]:
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - heading "SGIARC" [level=2] [ref=e95]
+          - heading "Center for Advanced Research & Innovation" [level=3] [ref=e96]
+          - paragraph [ref=e97]: Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Fostering multidisciplinary research, AI, IoT, Robotics, Renewable Energy, Patents & Industry Collaborations.
+        - generic [ref=e98]:
+          - heading "Quick Links" [level=4] [ref=e99]
+          - list [ref=e100]:
+            - listitem [ref=e101]:
+              - link "About BioMID" [ref=e102] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e103]:
+              - link "Research Areas" [ref=e104] [cursor=pointer]:
+                - /url: /research-areas
+            - listitem [ref=e105]:
+              - link "Funded Projects" [ref=e106] [cursor=pointer]:
+                - /url: /projects
+            - listitem [ref=e107]:
+              - link "Publications" [ref=e108] [cursor=pointer]:
+                - /url: /publications
+            - listitem [ref=e109]:
+              - link "Team Members" [ref=e110] [cursor=pointer]:
+                - /url: /team
+        - generic [ref=e111]:
+          - heading "Contact Secretariat" [level=4] [ref=e112]
+          - list [ref=e113]:
+            - listitem [ref=e114]:
+              - generic [ref=e118]:
+                - strong [ref=e119]: "SSGMCE Campus:"
+                - text: SGIARC Research Wing, Shegaon - 444503, Dist. Buldhana, Maharashtra
+            - listitem [ref=e120]:
+              - generic [ref=e124]:
+                - strong [ref=e125]: "Email:"
+                - link "sgiarc@ssgmce.ac.in" [ref=e126] [cursor=pointer]:
+                  - /url: mailto:sgiarc@ssgmce.ac.in
+            - listitem [ref=e127]:
+              - generic [ref=e130]:
+                - strong [ref=e131]: "Helpline:"
+                - text: +91-7265-252478
+      - generic [ref=e132]:
+        - paragraph [ref=e133]: © 2026 SGIARC | Shri Sant Gajanan Maharaj College of Engineering, Shegaon. All Rights Reserved.
+        - generic [ref=e134]:
+          - link "SSGMCE Ecosystem" [ref=e135] [cursor=pointer]:
+            - /url: https://www.ssgmce.ac.in/
+          - link "Campus Map" [ref=e136] [cursor=pointer]:
+            - /url: /contact
