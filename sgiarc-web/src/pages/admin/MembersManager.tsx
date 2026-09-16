@@ -13,13 +13,9 @@ interface Member {
 
 const MembersManager: React.FC = () => {
   const [members, setMembers] = useState<Member[]>([]);
-  const [loading, setLoading] = useState(true);
-
   const fetchMembers = async () => {
-    setLoading(true);
     const { data } = await supabase.from('members').select('*').order('sort_order');
     if (data) setMembers(data);
-    setLoading(false);
   };
 
   useEffect(() => {

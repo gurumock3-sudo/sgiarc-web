@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { supabase } from '../../lib/supabase';
-import { Upload, Trash2, Copy, FileIcon, ImageIcon } from 'lucide-react';
+import { Upload, Trash2, Copy, FileIcon } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const MediaLibrary: React.FC = () => {

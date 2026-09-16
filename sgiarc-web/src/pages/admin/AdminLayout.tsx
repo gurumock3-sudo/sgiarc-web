@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, Navigate, Link, useLocation } from 'react-router-dom';
 import { supabase } from '../../lib/supabase';
-import { LayoutDashboard, Users, FileText, Image as ImageIcon, Settings, LogOut, FileCode } from 'lucide-react';
+import { LayoutDashboard, Users, FileText, Image as ImageIcon, LogOut, FileCode } from 'lucide-react';
 import { Toaster } from 'react-hot-toast';
 
 const AdminLayout: React.FC = () => {
