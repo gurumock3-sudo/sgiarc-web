@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import SplitTextReveal from '../animations/SplitTextReveal';
 
 const StanfordNewsEvents: React.FC = () => {
   const news = [
@@ -37,15 +38,9 @@ const StanfordNewsEvents: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-16">
           {/* Left Column - Title & Button */}
           <div className="w-full lg:w-1/3 flex flex-col">
-            <motion.h2 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "0px" }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-4xl md:text-5xl font-serif font-bold text-stanford-black mb-6 leading-tight"
-            >
-              SGIARC News
-            </motion.h2>
+            <div className="text-4xl md:text-5xl font-serif font-bold text-stanford-black mb-6 leading-tight">
+              <SplitTextReveal text="SGIARC News" />
+            </div>
             <motion.p 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
