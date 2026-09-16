@@ -1,1 +1,3 @@
 [     300ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=83ce57d6:15804
+[  148445ms] [WARNING] No routes matched location "/team"  @ http://localhost:5173/@vite/client:298
+[  148446ms] [WARNING] No routes matched location "/team"  @ http://localhost:5173/@vite/client:298

@@ -1,0 +1,64 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - generic [ref=f2e5]:
+      - link "BioMID Lab Biosensing, Microsystems & Intelligent Diagnostics" [ref=f2e6] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e7]: BioMID Lab
+        - generic [ref=f2e8]: Biosensing, Microsystems & Intelligent Diagnostics
+      - button [ref=f2e9]
+  - main [ref=f2e11]:
+    - generic [ref=f2e12]:
+      - generic [ref=f2e14]:
+        - heading "Research Team" [level=1] [ref=f2e15]
+        - paragraph [ref=f2e16]: The minds behind BioMID Lab
+      - generic [ref=f2e17]:
+        - heading "Principal Investigator" [level=2] [ref=f2e19]
+        - heading "Researchers" [level=2] [ref=f2e21]
+  - contentinfo [ref=f2e22]:
+    - generic [ref=f2e23]:
+      - generic [ref=f2e24]:
+        - generic [ref=f2e25]:
+          - heading "SGIARC" [level=2] [ref=f2e26]
+          - heading "Center for Advanced Research & Innovation" [level=3] [ref=f2e27]
+          - paragraph [ref=f2e28]: Official Research Center of Shri Sant Gajanan Maharaj College of Engineering, Shegaon. Fostering multidisciplinary research, AI, IoT, Robotics, Renewable Energy, Patents & Industry Collaborations.
+        - generic [ref=f2e29]:
+          - heading "Quick Links" [level=4] [ref=f2e30]
+          - list [ref=f2e31]:
+            - listitem [ref=f2e32]:
+              - link "About BioMID" [ref=f2e33] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f2e34]:
+              - link "Research Areas" [ref=f2e35] [cursor=pointer]:
+                - /url: /research-areas
+            - listitem [ref=f2e36]:
+              - link "Funded Projects" [ref=f2e37] [cursor=pointer]:
+                - /url: /projects
+            - listitem [ref=f2e38]:
+              - link "Publications" [ref=f2e39] [cursor=pointer]:
+                - /url: /publications
+            - listitem [ref=f2e40]:
+              - link "Team Members" [ref=f2e41] [cursor=pointer]:
+                - /url: /team
+        - generic [ref=f2e42]:
+          - heading "Contact Secretariat" [level=4] [ref=f2e43]
+          - list [ref=f2e44]:
+            - listitem [ref=f2e45]:
+              - generic [ref=f2e49]:
+                - strong [ref=f2e50]: "SSGMCE Campus:"
+                - text: SGIARC Research Wing, Shegaon - 444503, Dist. Buldhana, Maharashtra
+            - listitem [ref=f2e51]:
+              - generic [ref=f2e55]:
+                - strong [ref=f2e56]: "Email:"
+                - link "sgiarc@ssgmce.ac.in" [ref=f2e57] [cursor=pointer]:
+                  - /url: mailto:sgiarc@ssgmce.ac.in
+            - listitem [ref=f2e58]:
+              - generic [ref=f2e61]:
+                - strong [ref=f2e62]: "Helpline:"
+                - text: +91-7265-252478
+      - generic [ref=f2e63]:
+        - paragraph [ref=f2e64]: © 2026 SGIARC | Shri Sant Gajanan Maharaj College of Engineering, Shegaon. All Rights Reserved.
+        - generic [ref=f2e65]:
+          - link "SSGMCE Ecosystem" [ref=f2e66] [cursor=pointer]:
+            - /url: https://www.ssgmce.ac.in/
+          - link "Campus Map" [ref=f2e67] [cursor=pointer]:
+            - /url: /contact
