@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Beaker } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { supabase } from '../../lib/supabase';
+import MaskedReveal from '../animations/MaskedReveal';
 
 interface Project {
   id: string;
@@ -26,25 +26,42 @@ const FeaturedProjectsSection: React.FC<{ title?: string, subtitle?: string }> =
   }, []);
 
   return (
-    <section className="section bg-white relative z-20">
+    <section className="section bg-white relative z-20 pt-32 pb-32">
       <div className="container">
-        <div className="mb-16">
-          <div className="section-badge">Funded Initiatives</div>
-          <h2 className="section-title">{title || 'Featured Research Projects'}</h2>
-          <div className="divider-ssgmce"></div>
-          <p className="text-stanford-coolGrey max-w-3xl text-xl font-light">
-            {subtitle || 'High-impact sponsored research projects funded by national agencies and industry partners.'}
-          </p>
+        <div className="mb-20">
+          <MaskedReveal delay={0.1} duration={1}>
+            <div className="text-stanford-cardinal font-bold font-sans tracking-widest uppercase text-sm mb-4">Funded Initiatives</div>
+          </MaskedReveal>
+          
+          <div className="mb-6 leading-tight">
+            {(title || 'Featured Research Projects').split(' ').map((word, i) => (
+              <MaskedReveal key={i} delay={0.2 + (i * 0.05)} duration={1.2}>
+                <span className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-stanford-black mr-3 inline-block">
+                  {word}
+                </span>
+              </MaskedReveal>
+            ))}
+          </div>
+          
+          <MaskedReveal delay={0.4} duration={1}>
+            <div className="w-16 h-1 bg-stanford-cardinal mb-6"></div>
+          </MaskedReveal>
+          
+          <MaskedReveal delay={0.5} duration={1.2}>
+            <p className="text-stanford-coolGrey max-w-3xl text-xl font-light">
+              {subtitle || 'High-impact sponsored research projects funded by national agencies and industry partners.'}
+            </p>
+          </MaskedReveal>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <motion.div 
               key={project.id} 
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.8, delay: idx * 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="bg-stanford-lightGrey p-10 shadow-sm border-b-4 border-transparent hover:border-stanford-cardinal transition-all duration-300 group flex flex-col"
             >
               <h3 className="text-2xl font-serif font-bold mb-4 text-stanford-black group-hover:text-stanford-cardinal transition-colors leading-snug">
@@ -60,9 +77,12 @@ const FeaturedProjectsSection: React.FC<{ title?: string, subtitle?: string }> =
           ))}
         </div>
         
-        <div className="mt-16">
-          <Link to="/projects" className="btn btn-primary text-lg px-10 py-4 shadow-md">View All Sponsored Projects</Link>
-        </div>
+        <motion.div 
+          initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} viewport={{ once: true }}
+          className="mt-16"
+        >
+          <Link to="/projects" className="btn btn-primary rounded-none font-bold uppercase tracking-wider text-sm px-10 shadow-md">View All Sponsored Projects</Link>
+        </motion.div>
       </div>
     </section>
   );

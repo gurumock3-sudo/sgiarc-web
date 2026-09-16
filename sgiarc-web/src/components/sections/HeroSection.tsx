@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { supabase } from '../../lib/supabase';
+import MaskedReveal from '../animations/MaskedReveal';
 
 interface HeroContent {
   eyebrow: string;
@@ -21,9 +22,12 @@ interface HeroContent {
 const HeroSection: React.FC<{ sectionTitle?: string }> = () => {
   const [heroContent, setHeroContent] = useState<HeroContent | null>(null);
   const { scrollY } = useScroll();
-  // Deep parallax for stanford effect
-  const y = useTransform(scrollY, [0, 1000], [0, 300]);
-  const scale = useTransform(scrollY, [0, 1000], [1, 1.05]);
+  
+  // Exact Stanford Parallax (Image moves down at 0.3 speed, scales slightly)
+  const y = useTransform(scrollY, [0, 1000], [0, 250]);
+  const scale = useTransform(scrollY, [0, 1000], [1, 1.1]);
+  // Stanford fades out content slightly on scroll
+  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
 
   useEffect(() => {
     const fetchHero = async () => {
@@ -39,23 +43,10 @@ const HeroSection: React.FC<{ sectionTitle?: string }> = () => {
     fetchHero();
   }, []);
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 }
-    }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
-  };
-
   return (
-    <section className="relative w-full h-screen min-h-[700px] overflow-hidden bg-stanford-black flex items-end pb-24">
+    <section className="relative w-full h-screen min-h-[700px] overflow-hidden bg-stanford-black flex items-end pb-24 lg:pb-32">
       {heroContent && (
-        <motion.div className="absolute inset-0 z-0" style={{ y, scale }}>
+        <motion.div className="absolute inset-0 z-0 origin-bottom" style={{ y, scale }}>
           {heroContent.video_url ? (
             <video autoPlay muted loop playsInline preload="metadata" poster={heroContent.poster_url} className="w-full h-full object-cover object-center">
               <source src={heroContent.video_url} type="video/mp4" />
@@ -63,50 +54,64 @@ const HeroSection: React.FC<{ sectionTitle?: string }> = () => {
           ) : (
             <img src={heroContent.poster_url} alt="SGIARC Hero" className="w-full h-full object-cover object-center" />
           )}
-          {/* Stanford style bottom gradient for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-stanford-black/80 via-stanford-black/20 to-transparent"></div>
+          {/* Stanford Hero Gradient Mask - Pure black at bottom fading up */}
+          <div className="absolute inset-0 bg-gradient-to-t from-stanford-black via-stanford-black/40 to-transparent opacity-90"></div>
         </motion.div>
       )}
 
       <div className="container relative z-10 px-4 md:px-12 lg:px-24 w-full">
         {heroContent ? (
           <motion.div 
-            variants={containerVariants}
-            initial="hidden"
-            animate="show"
-            className="max-w-4xl"
+            style={{ opacity }}
+            className="max-w-4xl flex flex-col"
           >
             {heroContent.eyebrow && (
-              <motion.div variants={itemVariants} className="text-stanford-white/90 font-sans text-sm md:text-base font-semibold mb-4 tracking-widest uppercase">
-                {heroContent.eyebrow}
-              </motion.div>
+              <div className="mb-6">
+                <MaskedReveal delay={0.1} duration={1}>
+                  <span className="text-stanford-white/90 font-sans text-sm md:text-base font-bold tracking-[0.2em] uppercase">
+                    {heroContent.eyebrow}
+                  </span>
+                </MaskedReveal>
+              </div>
             )}
             
-            <motion.h1 
-              variants={itemVariants}
-              className="text-6xl md:text-8xl lg:text-[110px] font-serif font-medium text-white mb-6 leading-[0.95] tracking-tight"
-            >
-              {heroContent.title}
-            </motion.h1>
+            <div className="mb-6 leading-[0.9]">
+              {/* Split title into words to animate individually like Stanford */}
+              {heroContent.title.split(' ').map((word, i) => (
+                <MaskedReveal key={i} delay={0.2 + (i * 0.1)} duration={1.2}>
+                  <span className="text-6xl md:text-8xl lg:text-[130px] font-serif font-bold text-white tracking-tight mr-4">
+                    {word}
+                  </span>
+                </MaskedReveal>
+              ))}
+            </div>
             
             {heroContent.subtitle && (
-              <motion.p variants={itemVariants} className="text-2xl md:text-4xl text-white font-serif font-light mb-8 max-w-3xl">
-                {heroContent.subtitle}
-              </motion.p>
+              <div className="mb-10 max-w-3xl">
+                <MaskedReveal delay={0.6} duration={1.2}>
+                  <p className="text-2xl md:text-4xl text-white font-serif font-light leading-snug">
+                    {heroContent.subtitle}
+                  </p>
+                </MaskedReveal>
+              </div>
             )}
             
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-6 mt-12">
+            <div className="flex flex-wrap gap-6 mt-6">
               {heroContent.primary_cta_text && (
-                <Link to={heroContent.primary_cta_link} className="btn bg-stanford-cardinal text-white hover:bg-stanford-cardinalDark rounded-none px-8 py-4 font-sans text-lg flex items-center shadow-md">
-                  {heroContent.primary_cta_text} <ArrowRight className="ml-3 h-5 w-5" />
-                </Link>
+                <MaskedReveal delay={0.8} duration={1}>
+                  <Link to={heroContent.primary_cta_link} className="btn bg-stanford-cardinal text-white hover:bg-stanford-cardinalDark rounded-none px-8 py-4 font-sans font-bold text-lg flex items-center shadow-md">
+                    {heroContent.primary_cta_text} <ArrowRight className="ml-3 h-5 w-5" />
+                  </Link>
+                </MaskedReveal>
               )}
               {heroContent.secondary_cta_text && (
-                <Link to={heroContent.secondary_cta_link} className="btn bg-white text-stanford-cardinal hover:bg-gray-100 rounded-none px-8 py-4 font-sans text-lg flex items-center shadow-md">
-                  {heroContent.secondary_cta_text}
-                </Link>
+                <MaskedReveal delay={0.9} duration={1}>
+                  <Link to={heroContent.secondary_cta_link} className="btn bg-transparent border border-white text-white hover:bg-white hover:text-stanford-cardinal rounded-none px-8 py-4 font-sans font-bold text-lg flex items-center shadow-md">
+                    {heroContent.secondary_cta_text}
+                  </Link>
+                </MaskedReveal>
               )}
-            </motion.div>
+            </div>
           </motion.div>
         ) : (
           <div className="animate-pulse flex flex-col space-y-4 max-w-3xl pb-12">
