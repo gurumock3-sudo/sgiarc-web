@@ -55,48 +55,38 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
 
   return (
     <>
-      {/* Top Bar for SSGMCE */}
-      <div className="hidden md:block bg-brand-charcoal text-white text-xs py-2 px-8 z-50 fixed w-full top-0 h-10">
-        <div className="container flex justify-between items-center h-full">
-          <span>Shri Gajanan Innovation & Advanced Research Center (SGIARC)</span>
-          <span>Shri Sant Gajanan Maharaj College of Engineering, Shegaon</span>
+      {/* Utility Top Bar (Stanford Cardinal) */}
+      <div className="hidden md:flex justify-between items-center px-4 md:px-12 lg:px-24 h-10 bg-stanford-cardinal text-white text-xs font-sans tracking-wide">
+        <div>SGIARC | Sant Gajanan Maharaj College of Engineering</div>
+        <div className="flex space-x-6">
+          <Link to="/contact" className="hover:underline">Contact Us</Link>
+          <a href="https://ssgmce.ac.in" target="_blank" rel="noreferrer" className="hover:underline">SSGMCE Campus</a>
         </div>
       </div>
 
-      {/* Main Navigation */}
       <header
         className={cn(
-          'fixed w-full z-40 transition-all duration-300 md:top-10',
-          isScrolled
-            ? 'bg-white shadow-md py-2'
-            : isHome
-              ? 'bg-transparent py-6'
-              : 'bg-white py-4 shadow-sm'
+          'fixed w-full z-40 transition-all duration-300',
+          isScrolled ? 'md:top-0 bg-white shadow-lg py-2' : 'md:top-10 bg-white py-4 border-b border-gray-100 shadow-sm'
         )}
       >
-        <div className="container flex items-center justify-between px-4 md:px-8">
+        <div className="container flex items-center justify-between px-4 md:px-12 lg:px-24">
           {/* Logo / Brand */}
           <Link to="/" className="flex flex-col group">
-            <span className={cn("text-xl md:text-2xl font-heading font-bold transition-colors", 
-              (isHome && !isScrolled) ? "text-white group-hover:text-brand-lavender" : "text-brand-navy"
-            )}>
+            <span className="text-2xl md:text-3xl font-serif font-bold text-stanford-cardinal tracking-tight transition-colors">
               BioMID Lab
             </span>
-            <span className={cn("text-[0.65rem] md:text-xs uppercase font-semibold transition-colors",
-              (isHome && !isScrolled) ? "text-brand-lavender" : "text-brand-accent"
-            )}>
-              Biosensing, Microsystems & Intelligent Diagnostics
+            <span className="text-[0.65rem] md:text-xs uppercase font-sans font-semibold text-stanford-coolGrey tracking-widest mt-1">
+              Biosensing & Intelligent Diagnostics
             </span>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-1">
+          <nav className="hidden md:flex space-x-2">
             {navLinks.map((link) => (
               <div key={link.id} className="relative group">
                 {link.dropdown ? (
-                  <div className={cn("px-4 py-2 font-semibold flex items-center cursor-pointer transition-colors",
-                    (isHome && !isScrolled) ? "text-white hover:text-brand-lavender" : "text-brand-charcoal hover:text-brand-navy"
-                  )}>
+                  <div className="px-3 py-2 font-sans font-semibold text-stanford-black flex items-center cursor-pointer transition-colors hover:text-stanford-cardinal">
                     {link.label}
                     <ChevronDown className="ml-1 h-4 w-4" />
                   </div>
@@ -106,10 +96,7 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
                       href={link.path}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={cn(
-                        'px-4 py-2 font-semibold block transition-colors',
-                        (isHome && !isScrolled) ? "text-white hover:text-brand-lavender" : "text-brand-charcoal hover:text-brand-navy"
-                      )}
+                      className="px-3 py-2 font-sans font-semibold block transition-colors text-stanford-black hover:text-stanford-cardinal"
                     >
                       {link.label}
                     </a>
@@ -117,12 +104,10 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
                     <Link
                       to={link.path}
                       className={cn(
-                        'px-4 py-2 font-semibold block transition-colors',
-                        location.pathname === link.path && (!isHome || isScrolled)
-                          ? 'text-brand-navy border-b-2 border-brand-navy'
-                          : location.pathname === link.path && isHome && !isScrolled
-                          ? 'text-white border-b-2 border-white'
-                          : (isHome && !isScrolled) ? "text-gray-200 hover:text-white" : "text-brand-charcoal hover:text-brand-navy"
+                        'px-3 py-2 font-sans font-semibold block transition-colors',
+                        location.pathname === link.path 
+                          ? 'text-stanford-cardinal' 
+                          : 'text-stanford-black hover:text-stanford-cardinal'
                       )}
                     >
                       {link.label}
@@ -132,8 +117,8 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
 
                 {/* Dropdown Menu */}
                 {link.dropdown && (
-                  <div className="absolute left-0 mt-0 w-56 bg-white border border-gray-100 shadow-lg rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    <div className="py-2">
+                  <div className="absolute left-0 mt-0 w-64 bg-white border-t-2 border-stanford-cardinal shadow-xl rounded-b opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="py-3">
                       {link.dropdown.map((drop) => (
                         drop.is_external ? (
                           <a
@@ -141,7 +126,7 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
                             href={drop.path}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block px-4 py-2 text-sm text-brand-charcoal hover:bg-brand-lavender/30 hover:text-brand-navy"
+                            className="block px-6 py-2 text-sm font-sans text-stanford-coolGrey hover:text-stanford-cardinal hover:bg-gray-50 transition-colors"
                           >
                             {drop.label}
                           </a>
@@ -149,7 +134,7 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
                           <Link
                             key={drop.id}
                             to={drop.path}
-                            className="block px-4 py-2 text-sm text-brand-charcoal hover:bg-brand-lavender/30 hover:text-brand-navy"
+                            className="block px-6 py-2 text-sm font-sans text-stanford-coolGrey hover:text-stanford-cardinal hover:bg-gray-50 transition-colors"
                           >
                             {drop.label}
                           </Link>
@@ -164,7 +149,7 @@ const Header: React.FC<{ isHome?: boolean }> = ({ isHome = false }) => {
 
           {/* Mobile Menu Button */}
           <button
-            className={cn("md:hidden p-2 transition-colors", (isHome && !isScrolled) ? "text-white" : "text-brand-charcoal")}
+            className="md:hidden p-2 text-stanford-black transition-colors"
             onClick={() => setMobileMenuOpen(true)}
           >
             <Menu size={28} />

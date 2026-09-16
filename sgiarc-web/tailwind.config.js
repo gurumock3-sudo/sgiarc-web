@@ -7,18 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          lavender: '#E6E6FA',
-          ivory: '#FFFFF0',
-          beige: '#F5F5DC',
-          charcoal: '#36454F',
-          navy: '#000080',
-          accent: '#7bb3e2'
+        stanford: {
+          cardinal: '#8C1515',
+          cardinalDark: '#820000',
+          black: '#2E2D29',
+          coolGrey: '#4D4F53',
+          lightGrey: '#F4F4F4',
+          sand: '#D4D1D1',
+          stone: '#544948',
+          white: '#FFFFFF',
         }
       },
       fontFamily: {
-        sans: ['Open Sans', 'Inter', 'sans-serif'],
-        heading: ['Oswald', 'sans-serif']
+        sans: ['"Source Sans 3"', 'sans-serif'],
+        serif: ['"Source Serif 4"', 'serif'],
+        heading: ['"Source Serif 4"', 'serif']
       }
     },
   },

@@ -21,38 +21,37 @@ const ResearchAreasSection: React.FC<{ title?: string, subtitle?: string }> = ({
   }, []);
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-stanford-lightGrey">
       <div className="container">
-        <div className="mb-12 text-center md:text-left">
+        <div className="mb-16">
           <div className="section-badge">Scientific Focus</div>
           <h2 className="section-title">{title || 'Research Thrust Areas'}</h2>
-          <div className="divider-ssgmce mx-auto md:mx-0"></div>
-          <p className="text-gray-700 max-w-2xl text-lg">
+          <div className="divider-ssgmce"></div>
+          <p className="text-stanford-coolGrey max-w-3xl text-xl font-light">
             {subtitle || 'Core scientific domains actively investigated at BioMID Lab.'}
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {areas.map((area, idx) => (
             <motion.div 
               key={area.id}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
-              className="flex items-start p-6 bg-brand-ivory rounded-lg border border-gray-100 hover:shadow-md transition-shadow"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="group bg-white p-10 border-b-4 border-transparent hover:border-stanford-cardinal shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
             >
-              <div className="flex-shrink-0 mr-6 mt-1 hidden sm:block">
-                <div className="w-12 h-12 bg-brand-lavender rounded-full flex items-center justify-center text-brand-navy">
-                  <Activity className="w-6 h-6" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-heading font-bold text-brand-charcoal mb-2 flex items-center">
-                  <CheckCircle2 className="w-5 h-5 mr-2 text-brand-accent sm:hidden" />
+              <div className="mb-6">
+                <h3 className="text-2xl font-serif font-bold text-stanford-black group-hover:text-stanford-cardinal transition-colors">
                   {area.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">{area.description}</p>
+              </div>
+              <p className="text-stanford-coolGrey font-sans text-lg leading-relaxed flex-grow">
+                {area.description}
+              </p>
+              <div className="mt-8 flex items-center text-stanford-cardinal font-bold font-sans tracking-wide uppercase text-sm group-hover:translate-x-2 transition-transform duration-300">
+                Explore <span className="ml-2">→</span>
               </div>
             </motion.div>
           ))}

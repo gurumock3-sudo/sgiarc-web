@@ -26,13 +26,13 @@ const FeaturedProjectsSection: React.FC<{ title?: string, subtitle?: string }> =
   }, []);
 
   return (
-    <section className="section section-alt relative z-20">
+    <section className="section bg-white relative z-20">
       <div className="container">
-        <div className="mb-16 text-center md:text-left">
+        <div className="mb-16">
           <div className="section-badge">Funded Initiatives</div>
           <h2 className="section-title">{title || 'Featured Research Projects'}</h2>
-          <div className="divider-ssgmce mx-auto md:mx-0"></div>
-          <p className="text-gray-700 max-w-2xl text-lg">
+          <div className="divider-ssgmce"></div>
+          <p className="text-stanford-coolGrey max-w-3xl text-xl font-light">
             {subtitle || 'High-impact sponsored research projects funded by national agencies and industry partners.'}
           </p>
         </div>
@@ -41,29 +41,27 @@ const FeaturedProjectsSection: React.FC<{ title?: string, subtitle?: string }> =
           {projects.map((project, idx) => (
             <motion.div 
               key={project.id} 
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white rounded-xl p-8 shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group flex flex-col"
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-stanford-lightGrey p-10 shadow-sm border-b-4 border-transparent hover:border-stanford-cardinal transition-all duration-300 group flex flex-col"
             >
-              <div className="h-40 bg-brand-ivory rounded-lg mb-6 flex items-center justify-center text-brand-navy/40 overflow-hidden relative shrink-0">
-                <Beaker className="w-12 h-12 absolute opacity-10 transform group-hover:scale-150 transition-transform duration-500" />
-                <span className="font-semibold text-sm px-4 text-center">{project.project_title}</span>
-              </div>
-              <h3 className="text-xl font-heading font-bold mb-3 text-brand-charcoal group-hover:text-brand-navy transition-colors">{project.project_title}</h3>
-              <p className="text-sm text-gray-600 mb-6 line-clamp-4 flex-grow">
-                {project.project_description}
+              <h3 className="text-2xl font-serif font-bold mb-4 text-stanford-black group-hover:text-stanford-cardinal transition-colors leading-snug">
+                {project.project_title}
+              </h3>
+              <p className="text-stanford-coolGrey font-sans text-lg mb-8 line-clamp-4 flex-grow">
+                {project.project_description || 'Exploring intelligent biosensing and advanced computational modelling.'}
               </p>
-              <Link to="/projects" className="text-brand-accent font-bold hover:text-brand-navy transition-colors inline-flex items-center text-xs uppercase tracking-wide mt-auto">
-                Read Full Abstract <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+              <Link to="/projects" className="text-stanford-cardinal font-bold font-sans tracking-wide uppercase text-sm inline-flex items-center mt-auto group-hover:translate-x-2 transition-transform duration-300">
+                Read Full Abstract <span className="ml-2">→</span>
               </Link>
             </motion.div>
           ))}
         </div>
         
-        <div className="text-center mt-16">
-          <Link to="/projects" className="btn btn-navy py-3 px-8 text-lg">View All Sponsored Projects</Link>
+        <div className="mt-16">
+          <Link to="/projects" className="btn btn-primary text-lg px-10 py-4 shadow-md">View All Sponsored Projects</Link>
         </div>
       </div>
     </section>
