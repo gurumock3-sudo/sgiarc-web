@@ -1,0 +1,85 @@
+
+--- BioMED_Lab_Equipment_List_12-09-26.docx ---
+LABORATORY EQUIPMENT LIST
+1. Consolidated Equipment Register
+Note: Entries 5–13 were added from the attached quotation/order summaries. Where no equipment serial number was shown, the purchase quotation/order reference and date are recorded in the Serial / ID column. Shipping charges and 3D-printer filaments are not listed as separate equipment items. External product/image-reference links have now been added within the Main Details cells. For website publication, lab-owned photographs are preferred; external product images may require permission from the image owner.
+Sr. | Equipment | Make | Model / Cat. No. | Serial / ID | Main Details | Qty
+1 | Bacteriological Incubator | Shital Scientific Industries, Mumbai | Cat. No. 13 | 350511 | Chamber 14" × 14" × 14"; 240 V; 300 W; max. temp. 60 °C Online reference / image source: Product / image reference  [Manufacturer listing (exact Cat. No. 13 page not located)] | 1
+2 | Double-Beam UV-Vis Spectrophotometer with Software | BioEra Life Sciences Pvt. Ltd. | Model Elite; current official Cat. No. BE/CI/SP/DB-S-04 | V-12-11-008 | Existing unit: 220 V, 50 Hz, 50 W. Current official model: 190–1100 nm; 1 nm bandwidth; ±0.5 nm wavelength accuracy. Online reference / image source: Official product page  [Manufacturer] | 1
+3 | Laboratory Centrifuge | REMI | R-8C | Handwritten marking: DELC-4363 / CE-R8C / 4/11 (verify physically) | Existing record: 5250 rpm; 1.45 A; 220/230 V, 50 Hz. Official R-8C: max. 5250 rpm; max. capacity 300 mL. Online reference / image source: Official REMI product page  [Manufacturer] | 1
+4 | Analytical / Semi-Micro Balance | Denver Instrument, Germany | TB-215D | 25709850 | 60/210 g capacity; 0.01/0.1 mg readability; approx. 80 mm pan; internal calibration; RS-232. Online reference / image source: Exact-model image reference  |  Specs / manual reference  [Exact-model marketplace images + manufacturer-era manual/specification reference] | 1
+5 | 3D Printer | Bambu Lab | X2D Combo | Serial not stated; Quotation SO277575 (19-Aug-2026) | Combo 3D printer. Quotation also includes 1.75 mm filament: PLA Basic Black, Jade White and Blue (reusable spools), plus ABS Blue refill. Filaments are treated as consumables, not separate equipment. Online reference / image source: Robu product / image page  [Supplier named in quotation] | 1
+6 | Analytical Balance | LabMart | 300 g × 0.001 g | Serial not stated; Order 405-8974422-4552366 (18-Aug-2026) | 300 g capacity; 0.001 g (1 mg) precision; glass draft shield; piece counting; tare function; calibration certificate; 200 g test weight; RS232 port. Online reference / image source: LabMart product / image page  [Brand / supplier product page] | 1
+7 | Aspheric Ophthalmic Lens Set | KASHURG | 78D + 90D + 20D | Serial not stated; Order 405-8003711-2673107 (07-Sep-2026) | Aspheric lens set comprising 78D, 90D and 20D lenses, supplied in a premium case. Online reference / image source: KASHURG product / image page  [Retail product page matching the ordered lens set] | 1
+8 | Silhouette Cutting Plotter | MY PRINT / Silhouette (as listed) | Portrait-4 | Serial not stated; Order 405-9390170-3191563 (18-Aug-2026) | Bluetooth wireless cutting plotter for craft/vinyl cutting; includes Silhouette Studio software (free software lifetime as stated in order). Online reference / image source: MY PRINT product / image page  [Supplier product page] | 1
+9 | Professional Hot-Melt Glue Gun | Crown Brand | CR 159 | Serial not stated; Order 408-9398722-1530766 (17-Aug-2026) | 150 W; silicone cover on nozzle for burn protection; temperature control; rapid heating; supplied with 5 glue sticks. Online reference / image source: Crown CR 159 product / image page  [Indian product listing for model CR 159] | 1
+10 | A3 Lamination Machine | Growlam | GL-12 | Serial not stated; Order 405-5519804-8745128 (18-Aug-2026) | A3 lamination machine; metal body; hot and cold temperature settings. Online reference / image source: Official Growlam product / image page  [Manufacturer] | 1
+11 | Benchtop Laboratory pH/mV Meter | Bionexis | BNPH002 | Serial not stated; Order 405-7965803-9389969 (18-Aug-2026) | 0.01 pH resolution; ±0.01 accuracy; research-grade benchtop instrument for biotech, pharma, healthcare and chemical testing. Online reference / image source: Official Bionexis product / image page  [Manufacturer] | 1
+12 | Soldering Iron Kit | Serplex | 12-in-1, 80 W LCD kit | Serial not stated; Order 405-1733437-9413168 (18-Aug-2026) | 80 W LCD adjustable-temperature soldering iron; 180–500 °C; ON/OFF switch; includes flux, 5 soldering tips, desoldering pump, stand and tweezers. Online reference / image source: Serplex product / image page  [Retail product page matching the kit] | 1
+13 | Professional Wax Heater | Hector | Single-pot model (model no. not stated) | Serial not stated; Order 405-5276167-4285160 (18-Aug-2026) | Professional single-pot wax heater with temperature control; listed for salon/home use. Online reference / image source: Official Hector product / image page  [Brand / manufacturer product page] | 1
+
+--- BioMID Team Information (1).docx ---
+                                                           TEAM 
+NAME | Atharv Vishal Sadavarte
+PROJECT NAME | Brain Tumor Detection and Classification Using Deep Learning
+PROJECT DESCRIPTION | Developed a deep learning-based brain tumor detection and classification system using MRI images, employing transfer learning, advanced preprocessing, augmentation, and explainable AI techniques for accurate multi-class tumor classification.
+CONTACT | SSGM_308103@ssgmce.ac.in
+NAME | Kamran Ali
+PROJECT NAME | Explainable AI for Atrial Fibrillation Detection Using 12-Lead ECG
+PROJECT DESCRIPTION | Developed a deep learning system for automated detection of Atrial Fibrillation from 12-lead ECG signals. The project uses a 1D U-Net architecture to learn important patterns from ECG recordings. The workflow includes ECG preprocessing, model training, validation, testing, and performance evaluation. Grad-CAM is used to explain the model's predictions by highlighting important regions of the ECG signal.
+CONTACT | SSGM_309077@ssgmce.ac.in
+NAME | Piyush Dawange
+PROJECT NAME | Known and Unknown Crop Diseases Recognition
+PROJECT DESCRIPTION | Currently working as an intern at Biospectronics, contributing to an AI-based agricultural crop disease detection project focused on crops prevalent in Maharashtra and India. The project involves leveraging Artificial Intelligence and Machine Learning techniques to detect and classify crop diseases from plant images, supporting smarter and more efficient agricultural practices.
+CONTACT | SSGM_308608@ssgmce.ac.in
+NAME | Tanushri Pravin Khawale
+PROJECT NAME | Explainable Oral Cancer Recognition Using Informed Deep Learning and Case-Based Reasoning
+PROJECT DESCRIPTION | Developing an explainable AI-based system for oral cancer recognition from clinical images. The proposed approach integrates IDL with medical knowledge and CBR to provide visual explanations through similar past cases. The system is designed to handle imperfect images and improve the transparency and reliability of oral cancer screening.
+CONTACT | SSGM_308675@ssgmce.ac.in
+NAME | Ummehani Sayyad
+PROJECT NAME | Arrhythmia detection using Self-Supervised learning In both In distribution and out of distribution settings
+PROJECT DESCRIPTION | Comparing SimCLR, BYOL and SwAV Self-Supervised learning methods in both ID and OOD settings and detect the arrhythmia.
+CONTACT | SSGM_308677@ssgmce.ac.in
+NAME | Ritika Manojkumar Chaudhari
+PROJECT NAME | Alzheimer's Disease Detection Using CNN Optimized with Particle Swarm Optimization (PSO) on MRI Images
+PROJECT DESCRIPTION | This project focuses on detecting Alzheimer's disease from MRI brain images using deep learning. A Convolutional Neural Network (CNN) is used for image classification, while Particle Swarm Optimization (PSO) is used to optimize the CNN architecture and improve its performance. The project also compares different deep learning models to achieve accurate and reliable detection..
+CONTACT | SSGM_309044@ssgmce.ac.in
+ | Dr. Manish Bhaiyya
+ | Principal Investigator, BioMID Lab Shri Sant Gajanan Maharaj College of Engineering, Shegaon, India
+ | Dr. Manish Bhaiyya is an Associate Professor in the Department of Electronics and Telecommunication Engineering and the Principal Investigator of the BioMID Lab, where he leads interdisciplinary research at the convergence of biosensors, micro/nanotechnology, point-of-care diagnostics, and artificial intelligence.  He received his Ph.D. from BITS Pilani and subsequently carried out postdoctoral research at the Technion – Israel Institute of Technology, Israel. His research interests include portable and smartphone-integrated biosensing systems, electrochemiluminescence and chemiluminescence sensing, MEMS and microfluidic devices, micro/nanofabrication, functional sensing interfaces, and AI/ML-assisted biomedical diagnostics.  A major focus of his research is the development of portable, affordable, intelligent, and clinically relevant diagnostic technologies capable of translating complex biological signals into actionable information. His group particularly explores the integration of advanced sensing platforms with machine learning, deep learning, and data-driven decision-making for healthcare, disease screening, food safety, and real-world point-of-care applications.  Dr. Bhaiyya has authored more than 60 peer-reviewed publications in international journals spanning biosensing, analytical chemistry, biomedical engineering, micro/nanosystems, sensors, and artificial intelligence. His research has appeared in journals published by leading scientific publishers including ACS, Elsevier, Springer Nature, Wiley, IEEE, and others. He is also an inventor of patented electrochemiluminescence biosensing technology.  In addition to his research activities, Dr. Bhaiyya serves as an Associate Editor of Microsystem Technologies, a Springer Nature journal, contributing to the advancement and dissemination of research in microsystems, sensors, miniaturized devices, and emerging technologies.  Through the BioMID Lab, he aims to bridge the gap between materials and devices, sensing and intelligence, and laboratory innovation and real-world deployment, with a broader vision of developing next-generation intelligent diagnostic technologies that are accessible, scalable, and clinically meaningful.
+CONTACT | manishbhaiyya@ssgmce.ac.in
+NAME | Chetan Gajanan Itware
+PROJECT NAME | Skin Cancer Detection & Classification
+PROJECT DESCRIPTION | Developed a deep learning–based skin cancer detection application capable of classifying dermoscopic images into 7 skin-lesion classes. The application provides the predicted class, confidence score, contributing factors/reasons, and precautionary recommendations to support user understanding. Designed an end-to-end pipeline involving image preprocessing, augmentation, model training, performance evaluation, and external validation for robust skin-lesion classification. Two research papers based on this work have been submitted for publication.
+CONTACT | SSGM_308323@ssgmce.ac.in
+NAME | Om Prashant Gond
+PROJECT NAME | "A trustworthy multimodal AI for chest disease diagnosis and patient risk analysis "
+PROJECT DESCRIPTION | "A trustworthy multimodal AI system for chest disease diagnosis and patient risk analysis using medical images and clinical data. It combines X-ray analysis, patient metadata information to identify potential diseases and assess risk. The system provides interpretable, confidence-aware predictions to support doctors in making safer and more informed clinical decisions."
+CONTACT | SSGM_309393@ssgmce.ac.in
+
+--- Collabrators.docx ---
+International Collabrator | International Collabrator | International Collabrator
+Collaborator | Institution / Country | Core Expertise
+Prof. Hossam Haick | Technion – Israel Institute of Technology, Israel | Nanomaterial-based sensors, Bio-FETs, non-invasive diagnostics, wearable/flexible sensors, AI-enabled sensing
+Dr. Prakash Rewatkar | Technion – Israel Institute of Technology, Israel | Microfluidics, electrochemical systems, biofuel cells, redox-flow batteries and energy harvesting
+Prof. Haridimos Kondylakis | University of Crete & FORTH-ICS, Greece | Big Data Engineering, health-data integration, federated learning, semantics, AI and biomedical information systems
+Dr. Karen López-Linares Román | Vicomtech, Spain | Medical image analysis, deep learning, domain adaptation, CT/MRI analysis and AI-assisted clinical imaging
+Dr. Iván Macía Oliver | Vicomtech, Spain | Digital health, biomedical technologies, medical image analysis, AI, clinical decision-support systems
+Prof. Rajnish Kaur Calay | UiT – The Arctic University of Norway, Norway | Energy and environmental engineering, microbial fuel cells, water-quality sensing, machine learning and sustainable technologies
+Prof. William Reis de Araujo | Institute of Chemistry, University of Campinas – UNICAMP, Brazil | Electrochemical biosensors, paper-based devices, wearable sensors, microfluidics, portable and low-cost analytical systems
+Prof. Weiwei Wu | School of Advanced Materials & Nanotechnology, Xidian University, China | Functional nanomaterials, AI-enabled nanosensors, gas/breath sensing, wearable sensors, electronic skin and electrochemical sensing
+National Collaborator | National Collaborator | National Collaborator
+Collaborator | Institution | Core Expertise
+Prof. Ritu Gupta | Indian Institute of Technology Delhi, India | MEMS, microfluidics, biosensors, ECL/CL, laser-induced graphene, PoCT
+Prof. Sanket Goel | BITS Pilani, Hyderabad Campus | MEMS, microfluidics, biosensors, ECL/CL, laser-induced graphene, PoCT
+Prof. Prasant Kumar Pattnaik | BITS Pilani, Hyderabad Campus | MEMS/MOEMS, photonics, microfluidics and sensing
+Dr. Madhusudan B. Kulkarni | Manipal Institute of Technology, MAHE | BioMEMS, microfluidics, biosensors, portable diagnostics and intelligent healthcare systems
+Dr. Suresh S. Balpande | Ramdeobaba University, Nagpur | MEMS, energy harvesting, piezoelectric/triboelectric systems and intelligent sensors
+Dr. Jitendra B. Zalke | Ramdeobaba University, Nagpur | Electrochemical/optical biosensing, CL/ECL, wearable sensing and intelligent diagnostics
+
+--- Reserach Areas.docx ---
+  AI-Enabled Point-of-Care Diagnostics: Development of intelligent point-of-care systems that combine biosensors, machine learning, deep learning and smartphone-based analysis for rapid biomarker quantification and clinical decision support. Research includes ML-assisted ECL/electrochemical sensing, deep-learning-based optical analysis, colorimetric diagnostics and emerging explainable and edge-AI approaches for healthcare applications. Your ACS Sensors review specifically connects ML-assisted biosensing with clinical PoCT decision-making. 
+  Electrochemiluminescence & Chemiluminescence Biosensing: Design of highly sensitive ECL and CL platforms for biochemical and molecular detection using compact electrode configurations, luminescent reactions and portable imaging. The work spans glucose, lactate, dopamine, choline, cholesterol, vitamin B12, vitamin C and other clinically relevant analytes, including multiplexed and simultaneous detection. Your publication record contains a substantial sequence of ECL studies using single, bipolar and multi-well configurations. 
+  Microfluidic, Paper-Based & 3D-Printed Devices: Development of low-cost miniaturized diagnostic platforms using microfluidics, paper substrates, wax/screen printing and additive manufacturing. Research focuses on integrating sample handling, sensing, reaction chambers and readout into compact devices suitable for resource-limited and decentralized testing. Recent studies include intelligent microfluidic plasma separation, paper-based CL sensors and portable 3D-printed ECL systems. 
+  Advanced Electrodes & Functional Materials for Biosensing: Exploration of functional electrode materials and scalable fabrication methods for improving sensitivity, selectivity and device miniaturization. Research includes laser-induced graphene, laser-ablated reduced graphene oxide, carbon-thread electrodes, graphite electrodes, MWCNT–CuO structures and emerging Bio-FET materials such as graphene, MoS₂ and carbon nanotubes. These materials provide the interface between molecular recognition and electrical or optical signal generation. 
+  MEMS, Smart Energy Harvesting & Microfluidic Power Systems: Research on miniaturized energy systems for autonomous and portable electronics, including MEMS-based energy scavengers, piezoelectric structures, computational optimization and machine-learning-assisted performance prediction. This direction is now extending toward paper-based microfluidic energy systems, including recent work on substrate-engineered aluminum–air fuel cells for compact and off-grid applications.

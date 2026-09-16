@@ -1,0 +1,111 @@
+
+--- BioMED_Lab_Equipment_List_12-09-26.docx ---
+LABORATORY EQUIPMENT LIST
+1. Consolidated Equipment Register
+Note: Entries 5–13 were added from the attached quotation/order summaries. Where no equipment serial number was shown, the purchase quotation/order reference and date are recorded in the Serial / ID column. Shipping charges and 3D-printer filaments are not listed as separate equipment items. External product/image-reference links have now been added within the Main Details cells. For website publication, lab-owned photographs are preferred; external product images may require permission from the image owner.
+
+--- BioMID Team Information (1).docx ---
+
+
+                                                           TEAM 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+	
+     
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- Collabrators.docx ---
+
+
+
+
+
+
+
+
+
+--- Reserach Areas.docx ---
+  AI-Enabled Point-of-Care Diagnostics: Development of intelligent point-of-care systems that combine biosensors, machine learning, deep learning and smartphone-based analysis for rapid biomarker quantification and clinical decision support. Research includes ML-assisted ECL/electrochemical sensing, deep-learning-based optical analysis, colorimetric diagnostics and emerging explainable and edge-AI approaches for healthcare applications. Your ACS Sensors review specifically connects ML-assisted biosensing with clinical PoCT decision-making. 
+
+  Electrochemiluminescence & Chemiluminescence Biosensing: Design of highly sensitive ECL and CL platforms for biochemical and molecular detection using compact electrode configurations, luminescent reactions and portable imaging. The work spans glucose, lactate, dopamine, choline, cholesterol, vitamin B12, vitamin C and other clinically relevant analytes, including multiplexed and simultaneous detection. Your publication record contains a substantial sequence of ECL studies using single, bipolar and multi-well configurations. 
+  Microfluidic, Paper-Based & 3D-Printed Devices: Development of low-cost miniaturized diagnostic platforms using microfluidics, paper substrates, wax/screen printing and additive manufacturing. Research focuses on integrating sample handling, sensing, reaction chambers and readout into compact devices suitable for resource-limited and decentralized testing. Recent studies include intelligent microfluidic plasma separation, paper-based CL sensors and portable 3D-printed ECL systems. 
+  Advanced Electrodes & Functional Materials for Biosensing: Exploration of functional electrode materials and scalable fabrication methods for improving sensitivity, selectivity and device miniaturization. Research includes laser-induced graphene, laser-ablated reduced graphene oxide, carbon-thread electrodes, graphite electrodes, MWCNT–CuO structures and emerging Bio-FET materials such as graphene, MoS₂ and carbon nanotubes. These materials provide the interface between molecular recognition and electrical or optical signal generation. 
+  MEMS, Smart Energy Harvesting & Microfluidic Power Systems: Research on miniaturized energy systems for autonomous and portable electronics, including MEMS-based energy scavengers, piezoelectric structures, computational optimization and machine-learning-assisted performance prediction. This direction is now extending toward paper-based microfluidic energy systems, including recent work on substrate-engineered aluminum–air fuel cells for compact and off-grid applications.
+
+
+
+
+
+
+
+
+
+
+
